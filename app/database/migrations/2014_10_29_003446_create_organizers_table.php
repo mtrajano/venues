@@ -18,8 +18,6 @@ class CreateOrganizersTable extends Migration {
 			$table->string('name');
 			$table->string('email');
 			$table->char('phone', 10)->nullable();
-
-		    $table->primary('id');
 		});
 	}
 
