@@ -19,8 +19,6 @@ class CreateVenuesTable extends Migration {
 			$table->string('address');
 			$table->char('zip', 5); //could be integer(5) as well
 			$table->char('phone', 10)->nullable();
-
-		    $table->primary('id');
 		});
 	}
 

@@ -18,8 +18,6 @@ class CreateTopicsTable extends Migration {
 			$table->string('name');
 			$table->bigInteger('category_id');
 			$table->text('description')->nullable();
-
-		    $table->primary('id');
 		});
 	}
 
