@@ -17,7 +17,7 @@ class CreateLikesTable extends Migration {
 			$table->string('user_id');
 			$table->bigInteger('topic_id');
 
-		    $table->primary(['email', 'topic_id']);
+		    $table->primary(['user_id', 'topic_id']);
 		});
 	}
 
