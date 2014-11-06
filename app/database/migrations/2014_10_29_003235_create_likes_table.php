@@ -14,7 +14,7 @@ class CreateLikesTable extends Migration {
 	{
 		Schema::create('likes', function($table)
 		{
-			$table->string('email');
+			$table->string('user_id');
 			$table->bigInteger('topic_id');
 
 		    $table->primary(['email', 'topic_id']);

@@ -17,7 +17,7 @@ class CreateEventsTable extends Migration {
 			$table->bigIncrements('id');
 			$table->date('when');
 			$table->string('name');
-			$table->bigInteger('category_id'); //not necessary, CONTAINS table has this info
+			$table->bigInteger('topic_id');
 			$table->bigInteger('venue_id');
 			$table->bigInteger('organizer_id')->nullable();
 			$table->text('description')->nullable();

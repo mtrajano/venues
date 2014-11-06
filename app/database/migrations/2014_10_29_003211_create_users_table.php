@@ -14,6 +14,7 @@ class CreateUsersTable extends Migration {
 	{
 		Schema::create('users', function($table)
 		{
+			$table->bigIncrements('id');
 			$table->string('f_name');
 			$table->string('l_name');
 			$table->date('b_day');
@@ -23,8 +24,6 @@ class CreateUsersTable extends Migration {
 			$table->char('zip', 5); //could be integer(5) as well
 			$table->char('phone', 10)->nullable();
 			$table->rememberToken();
-
-		    $table->primary('email');
 		});
 	}
 
