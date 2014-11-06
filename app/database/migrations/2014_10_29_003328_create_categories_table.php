@@ -14,6 +14,8 @@ class CreateCategoriesTable extends Migration {
 	{
 		Schema::create('categories', function($table)
 		{
+			$table->date('created_at');
+			$table->date('updated_at');
 			$table->bigIncrements('id');
 			$table->string('name');
 			$table->text('description')->nullable();

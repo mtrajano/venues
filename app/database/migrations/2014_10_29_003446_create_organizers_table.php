@@ -14,6 +14,8 @@ class CreateOrganizersTable extends Migration {
 	{
 		Schema::create('organizers', function($table)
 		{
+			$table->date('created_at');
+			$table->date('updated_at');
 			$table->bigIncrements('id');
 			$table->string('name');
 			$table->string('email');
