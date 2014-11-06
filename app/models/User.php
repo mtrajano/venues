@@ -11,10 +11,13 @@ class User extends Eloquent implements UserInterface, RemindableInterface
 
 	protected $table = 'users';
 
-	protected $hidden = array('password', 'remember_token');
+	// protected $hidden = array('password', 'remember_token');
 
-	protected $fillable = array('f_name', 'l_name', 'b_day', 'email', 'address', 'zip', 'phone');
+	protected $fillable = array('f_name', 'l_name', 'b_day', 'email', 'password', 'address', 'city', 'state', 'zip', 'phone');
 
+	/*
+	 * Relationships
+	 */
 	public function likes()
 	{
 		return $this->belongsToMany('Topic', 'likes');
@@ -23,5 +26,14 @@ class User extends Eloquent implements UserInterface, RemindableInterface
 	public function attends()
 	{
 		return $this->belongsToMany('Event', 'attends');
+	}
+
+	/*
+	 * Accessors and Mutators
+	 */
+
+	public function setPhoneAttribute($val)
+	{
+		$this->attributes['phone'] = preg_replace('/\D+/', '', $val); 
 	}
 }
