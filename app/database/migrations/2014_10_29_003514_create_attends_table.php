@@ -14,6 +14,8 @@ class CreateAttendsTable extends Migration {
 	{
 		Schema::create('attends', function($table)
 		{
+			$table->date('created_at');
+			$table->date('updated_at');
 			$table->string('user_id');
 			$table->bigInteger('event_id');
 

@@ -14,6 +14,8 @@ class CreateVenuesTable extends Migration {
 	{
 		Schema::create('venues', function($table)
 		{
+			$table->date('created_at');
+			$table->date('updated_at');
 			$table->bigIncrements('id');
 			$table->string('name');
 			$table->string('address');

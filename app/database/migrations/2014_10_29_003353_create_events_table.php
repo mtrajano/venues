@@ -14,6 +14,8 @@ class CreateEventsTable extends Migration {
 	{
 		Schema::create('events', function($table)
 		{
+			$table->date('created_at');
+			$table->date('updated_at');
 			$table->bigIncrements('id');
 			$table->date('when');
 			$table->string('name');

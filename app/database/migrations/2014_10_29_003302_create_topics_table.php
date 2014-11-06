@@ -14,6 +14,8 @@ class CreateTopicsTable extends Migration {
 	{
 		Schema::create('topics', function($table)
 		{
+			$table->date('created_at');
+			$table->date('updated_at');
 			$table->bigIncrements('id');
 			$table->string('name');
 			$table->bigInteger('category_id');
