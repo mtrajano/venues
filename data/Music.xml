@@ -1,0 +1,1473 @@
+<?xml version="1.0"?>
+<music>
+	<attends>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>1</user_id>
+			<event_id>0</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>1</user_id>
+			<event_id>1</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>10</user_id>
+			<event_id>18</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>10</user_id>
+			<event_id>19</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>12</user_id>
+			<event_id>2</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>12</user_id>
+			<event_id>6</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>12</user_id>
+			<event_id>9</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>12</user_id>
+			<event_id>20</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>19</user_id>
+			<event_id>9</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>2</user_id>
+			<event_id>10</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>2</user_id>
+			<event_id>17</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>2</user_id>
+			<event_id>20</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>20</user_id>
+			<event_id>8</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>20</user_id>
+			<event_id>11</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>20</user_id>
+			<event_id>18</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>3</user_id>
+			<event_id>12</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>3</user_id>
+			<event_id>15</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>5</user_id>
+			<event_id>2</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>6</user_id>
+			<event_id>14</event_id>
+		</attend>
+		<attend>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>8</user_id>
+			<event_id>16</event_id>
+		</attend>
+	</attends>
+	<categories>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>1</id>
+			<name>Alternative Rock</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>2</id>
+			<name>Hard Rock</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>3</id>
+			<name>Indie Rock</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>4</id>
+			<name>Classic Rock</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>5</id>
+			<name>Punk</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>6</id>
+			<name>Blues</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>7</id>
+			<name>Classical</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>8</id>
+			<name>Country</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>9</id>
+			<name>Trance</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>10</id>
+			<name>Dubstep</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>11</id>
+			<name>House</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>12</id>
+			<name>Techno</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>13</id>
+			<name>Pop</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>14</id>
+			<name>Rap</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>15</id>
+			<name>Hip-Hop</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>16</id>
+			<name>Instrumental</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>17</id>
+			<name>Jazz</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>18</id>
+			<name>Nature</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>19</id>
+			<name>Relaxation</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>20</id>
+			<name>Meditation</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>21</id>
+			<name>Reggae</name>
+			<description xsi:nil="true" description>
+		</category>
+		<category>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>22</id>
+			<name>Vocal</name>
+			<description xsi:nil="true" description>
+		</category>
+	</categories>
+	<events>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>1</id>
+			<when>2014-12-01</when>
+			<name>Bonaroo</name>
+			<topic_id>1</topic_id>
+			<venue_id>16</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>2</id>
+			<when>2014-12-04</when>
+			<name>Warped Tour</name>
+			<topic_id>5</topic_id>
+			<venue_id>6</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>3</id>
+			<when>2014-12-07</when>
+			<name>Electric Daisy Carnival</name>
+			<topic_id>11</topic_id>
+			<venue_id>12</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>4</id>
+			<when>2015-01-08</when>
+			<name>SXSW</name>
+			<topic_id>1</topic_id>
+			<venue_id>16</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>5</id>
+			<when>2015-02-17</when>
+			<name>iHeartRadio Music Festival</name>
+			<topic_id>15</topic_id>
+			<venue_id>1</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>6</id>
+			<when>2015-02-22</when>
+			<name>Coachella</name>
+			<topic_id>14</topic_id>
+			<venue_id>19</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>7</id>
+			<when>2015-03-17</when>
+			<name>Lollapalooza</name>
+			<topic_id>5</topic_id>
+			<venue_id>16</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>8</id>
+			<when>2015-03-28</when>
+			<name>iTunes Festival</name>
+			<topic_id>15</topic_id>
+			<venue_id>1</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>9</id>
+			<when>2015-04-06</when>
+			<name>Bamboozle</name>
+			<topic_id>4</topic_id>
+			<venue_id>9</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>10</id>
+			<when>2015-04-21</when>
+			<name>Highland Jazz Festival</name>
+			<topic_id>17</topic_id>
+			<venue_id>5</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>11</id>
+			<when>2015-05-20</when>
+			<name>Country Fest</name>
+			<topic_id>8</topic_id>
+			<venue_id>17</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>12</id>
+			<when>2015-06-02</when>
+			<name>Watershed Music Festival</name>
+			<topic_id>6</topic_id>
+			<venue_id>15</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>13</id>
+			<when>2015-07-11</when>
+			<name>Goodstock Music Festival</name>
+			<topic_id>2</topic_id>
+			<venue_id>16</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>14</id>
+			<when>2015-07-17</when>
+			<name>Decibel Festival</name>
+			<topic_id>10</topic_id>
+			<venue_id>13</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>15</id>
+			<when>2015-08-01</when>
+			<name>The Echo Project</name>
+			<topic_id>9</topic_id>
+			<venue_id>13</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>16</id>
+			<when>2015-09-01</when>
+			<name>Epicenter</name>
+			<topic_id>7</topic_id>
+			<venue_id>14</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>17</id>
+			<when>2015-09-17</when>
+			<name>Audiotistic Music Festival</name>
+			<topic_id>18</topic_id>
+			<venue_id>8</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>18</id>
+			<when>2015-12-03</when>
+			<name>DeltaFest</name>
+			<topic_id>12</topic_id>
+			<venue_id>12</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>19</id>
+			<when>2015-12-12</when>
+			<name>Krazy Fest</name>
+			<topic_id>16</topic_id>
+			<venue_id>8</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+		<event>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>20</id>
+			<when>2015-12-31</when>
+			<name>Atwood Music Festival</name>
+			<topic_id>19</topic_id>
+			<venue_id>8</venue_id>
+			<organizer_id xsi:nil="true" organizer_id>
+			<description xsi:nil="true" description>
+		</event>
+	</events>
+	<likes>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>1</user_id>
+			<topic_id>1</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>1</user_id>
+			<topic_id>2</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>10</user_id>
+			<topic_id>12</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>10</user_id>
+			<topic_id>16</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>12</user_id>
+			<topic_id>3</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>12</user_id>
+			<topic_id>5</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>12</user_id>
+			<topic_id>14</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>12</user_id>
+			<topic_id>20</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>19</user_id>
+			<topic_id>4</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>2</user_id>
+			<topic_id>17</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>2</user_id>
+			<topic_id>18</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>2</user_id>
+			<topic_id>19</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>20</user_id>
+			<topic_id>8</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>20</user_id>
+			<topic_id>12</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>20</user_id>
+			<topic_id>15</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>3</user_id>
+			<topic_id>6</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>3</user_id>
+			<topic_id>9</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>5</user_id>
+			<topic_id>5</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>6</user_id>
+			<topic_id>10</topic_id>
+		</like>
+		<like>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<user_id>8</user_id>
+			<topic_id>7</topic_id>
+		</like>
+	</likes>
+	<organizers>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>1</id>
+			<name>SXSW Inc</name>
+			<email>contactus@sxsw.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>2</id>
+			<name>iHeartRadio</name>
+			<email>contactus@iheartradio.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>3</id>
+			<name>LiveNation</name>
+			<email>help@livenation.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>4</id>
+			<name>AEG Live</name>
+			<email>events@aeglive.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>5</id>
+			<name>Classical Movements</name>
+			<email>info@classicalmovements.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>6</id>
+			<name>Peter Shapiro</name>
+			<email>peter@shapiro.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>7</id>
+			<name>Roc Nation</name>
+			<email>contactus@rocnation.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>8</id>
+			<name>SFX Entertainment</name>
+			<email>info@sfxii.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>9</id>
+			<name>Stageco</name>
+			<email>info.us@stageco.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>10</id>
+			<name>Insomniac Events</name>
+			<email>info@insomniac.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>11</id>
+			<name>SM Global Union</name>
+			<email>support@24hourhiphop.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>12</id>
+			<name>Apple</name>
+			<email>help@apple.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>13</id>
+			<name>Superfly Presents</name>
+			<email>info@superflymarketinggroup.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>14</id>
+			<name>AC Entertainment</name>
+			<email>info@acentertainment.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>15</id>
+			<name>Americana Music Association</name>
+			<email>info@americanamusic.org</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>16</id>
+			<name>Goldenvoice</name>
+			<email>info@goldenvoice.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>17</id>
+			<name>Vans</name>
+			<email>vanscustserv@vfc.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>18</id>
+			<name>Virgin Group</name>
+			<email>info@virgin.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>19</id>
+			<name>Michael Lang</name>
+			<email>michael@lang.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+		<organizer>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>20</id>
+			<name>MusicHouse</name>
+			<email>info@mhouse.com</email>
+			<phone xsi:nil="true" phone>
+		</organizer>
+	</organizers>
+	<topics>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>1</id>
+			<name>Led Zeppelin</name>
+			<category_id>4</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>2</id>
+			<name>Pink Floyd</name>
+			<category_id>4</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>3</id>
+			<name>Katy Perry</name>
+			<category_id>13</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>4</id>
+			<name>Jason Derulo</name>
+			<category_id>13</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>5</id>
+			<name>Lorde</name>
+			<category_id>13</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>6</id>
+			<name>Pitiful</name>
+			<category_id>15</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>7</id>
+			<name>Avicii</name>
+			<category_id>12</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>8</id>
+			<name>Sam Smith</name>
+			<category_id>23</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>9</id>
+			<name>Eminem</name>
+			<category_id>14</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>10</id>
+			<name>Wolfgang Amadeus Mozart</name>
+			<category_id>7</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>11</id>
+			<name>James Blunt</name>
+			<category_id>13</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>12</id>
+			<name>Metallica</name>
+			<category_id>5</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>13</id>
+			<name>Adele</name>
+			<category_id>23</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>14</id>
+			<name>3 Doors Down</name>
+			<category_id>2</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>15</id>
+			<name>AC/DC</name>
+			<category_id>2</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>16</id>
+			<name>Iron Maiden</name>
+			<category_id>5</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>17</id>
+			<name>John Mayer</name>
+			<category_id>7</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>18</id>
+			<name>Nirvana</name>
+			<category_id>1</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>19</id>  
+			<name>Red Hot Chilli Peppers</name>
+			<category_id>1</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+		<topic>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>20</id>
+			<name>Taylor Swift</name>
+			<category_id>9</category_id>
+			<description xsi:nil="true" description>
+		</topic>
+	</topics>
+	<users>
+		<user>
+			<id>1</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Jess</f_name>
+			<l_name>Shelton</l_name>
+			<b_day>1947-10-26</b_day>
+			<gender>m</gender>
+			<email>JessDShelton@rhyta.com</email>
+			<password>ja5ooyoo0Ie</password>
+			<address>4676 Rogers Street</address>
+			<city>Cincinnati</city>
+			<state>OH</state>
+			<zip>45231</zip>
+			<phone>5135217162</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>2</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Angela</f_name>
+			<l_name>Ledezma</l_name>
+			<b_day>1971-06-18</b_day>
+			<gender>f</gender>
+			<email>AngelaALedezma@teleworm.us</email>
+			<password>CeiXequae7ai</password>
+			<address>2597 Half and Half Drive</address>
+			<city>Fresno</city>
+			<state>CA</state>
+			<zip>93721</zip>
+			<phone>5599042126</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>3</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Jim</f_name>
+			<l_name>Cates</l_name>
+			<b_day>1954-05-21</b_day>
+			<gender>m</gender>
+			<email>JimSCates@superrito.com</email>
+			<password>Aiweew3oqu</password>
+			<address>159 Green Acres Road</address>
+			<city>Manteo</city>
+			<state>NC</state>
+			<zip>27954</zip>
+			<phone>2524734138</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>4</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>April</f_name>
+			<l_name>Bohn</l_name>
+			<b_day>1961-07-24</b_day>
+			<gender>f</gender>
+			<email>AprilPBohn@rhyta.com</email>
+			<password>Ra6cohy7L</password>
+			<address>219 Virgil Street</address>
+			<city>Panama City</city>
+			<state>FL</state>
+			<zip>32401</zip>
+			<phone>8502527923</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>5</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Natalie</f_name>
+			<l_name>Elswick</l_name>
+			<b_day>1967-02-19</b_day>
+			<gender>f</gender>
+			<email>NatalieDElswick@fleckens.hu</email>
+			<password>tiemo5ahQuae</password>
+			<address>236 Cunningham Court</address>
+			<city>Detroit</city>
+			<state>MI</state>
+			<zip>48226</zip>
+			<phone>2486975059</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>6</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Sylvia</f_name>
+			<l_name>Meehan</l_name>
+			<b_day>1982-08-30</b_day>
+			<gender>f</gender>
+			<email>SylviaAMeehan@dayrep.com</email>
+			<password>Ooyemoo4</password>
+			<address>1838 Wiseman Street</address>
+			<city>Knoxville</city>
+			<state>TN</state>
+			<zip>37909</zip>
+			<phone>8653820337</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>7</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Tammy</f_name>
+			<l_name>Toledo</l_name>
+			<b_day>1988-03-07</b_day>
+			<gender>f</gender>
+			<email>TammyLToledo@teleworm.us</email>
+			<password>quah9eeYung</password>
+			<address>676 Vesta Drive</address>
+			<city>Chicago</city>
+			<state>IL</state>
+			<zip>60631</zip>
+			<phone>7737047437</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>8</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Emma</f_name>
+			<l_name>Gardner</l_name>
+			<b_day>1934-09-19</b_day>
+			<gender>f</gender>
+			<email>EmmaLGardner@fleckens.hu</email>
+			<password>Ideiphoh8ie</password>
+			<address>4857 Terry Lane</address>
+			<city>Titusville</city>
+			<state>FL</state>
+			<zip>32796</zip>
+			<phone>3212649014</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>9</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Diane</f_name>
+			<l_name>Smith</l_name>
+			<b_day>1996-04-22</b_day>
+			<gender>f</gender>
+			<email>DianeCSmith@superrito.com</email>
+			<password>Fa5quee7</password>
+			<address>2215 Southern Street</address>
+			<city>Garden City</city>
+			<state>NY</state>
+			<zip>11530</zip>
+			<phone>5166641245</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>10</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Mark</f_name>
+			<l_name>Hanson</l_name>
+			<b_day>1943-06-19</b_day>
+			<gender>m</gender>
+			<email>MarkKHanson@gustr.com</email>
+			<password>Eesh9eiw6w</password>
+			<address>2099 Rocky Road</address>
+			<city>North Wales</city>
+			<state>PA</state>
+			<zip>19454</zip>
+			<phone>2156610334</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>11</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Francisca</f_name>
+			<l_name>Sutton</l_name>
+			<b_day>1937-03-05</b_day>
+			<gender>f</gender>
+			<email>FranciscaJSutton@dayrep.com</email>
+			<password>Ulei9Tox5IB</password>
+			<address>3839 Blair Court</address>
+			<city>Kansas City</city>
+			<state>MO</state>
+			<zip>64106</zip>
+			<phone>6603839116</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>12</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Jeanie</f_name>
+			<l_name>Butler</l_name>
+			<b_day>1956-09-05</b_day>
+			<gender>f</gender>
+			<email>JeaniePButler@rhyta.com</email>
+			<password>ieDohcee7jai</password>
+			<address>520 Star Route</address>
+			<city>Oak Lawn</city>
+			<state>IL</state>
+			<zip>60453</zip>
+			<phone>7086360477</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>13</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Jeffrey</f_name>
+			<l_name>Smith</l_name>
+			<b_day>1946-01-17</b_day>
+			<gender>m</gender>
+			<email>JeffreyKSmith@rhyta.com</email>
+			<password>Ceesh7Oo7eip</password>
+			<address>2105 Hog Camp Road</address>
+			<city>Burr Ridge</city>
+			<state>IL</state>
+			<zip>60527</zip>
+			<phone>7084547764</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>14</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Patricia</f_name>
+			<l_name>Costin</l_name>
+			<b_day>1993-02-23</b_day>
+			<gender>f</gender>
+			<email>PatriciaJCostin@einrot.com</email>
+			<password>La9aibaedo</password>
+			<address>4658 Rebecca Street</address>
+			<city>Hickory Hills</city>
+			<state>IL</state>
+			<zip>60457</zip>
+			<phone>8477105208</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>15</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Rodrigo</f_name>
+			<l_name>Nottingham</l_name>
+			<b_day>1994-07-08</b_day>
+			<gender>m</gender>
+			<email>RodrigoSNottingham@jourrapide.com</email>
+			<password>ee2aighooT</password>
+			<address>1513 Walnut Drive</address>
+			<city>Bismarck</city>
+			<state>ND</state>
+			<zip>58501</zip>
+			<phone>7013339826</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>16</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Doris</f_name>
+			<l_name>Heimbach</l_name>
+			<b_day>1984-06-08</b_day>
+			<gender>f</gender>
+			<email>DorisCHeimbach@einrot.com</email>
+			<password>zah9quohNg</password>
+			<address>4448 Poco Mas Drive</address>
+			<city>Allen</city>
+			<state>TX</state>
+			<zip>75002</zip>
+			<phone>2145091502</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>17</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Kenneth</f_name>
+			<l_name>Harris</l_name>
+			<b_day>1946-01-20</b_day>
+			<gender>m</gender>
+			<email>KennethBHarris@jourrapide.com</email>
+			<password>ieG1poang</password>
+			<address>2388 Hood Avenue</address>
+			<city>San Diego</city>
+			<state>CA</state>
+			<zip>92103</zip>
+			<phone>8587692773</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>18</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Brooke</f_name>
+			<l_name>Kerr</l_name>
+			<b_day>1954-09-18</b_day>
+			<gender>f</gender>
+			<email>BrookeRKerr@dayrep.com</email>
+			<password>Ou0Hu9kie</password>
+			<address>3204 Pineview Drive</address>
+			<city>Mankato</city>
+			<state>MN</state>
+			<zip>56001</zip>
+			<phone>5079225186</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>19</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Larry</f_name>
+			<l_name>White</l_name>
+			<b_day>1965-05-16</b_day>
+			<gender>m</gender>
+			<email>LarryFWhite@gustr.com</email>
+			<password>queiz1Ahzai</password>
+			<address>1831 White River Way</address>
+			<city>Salt Lake City</city>
+			<state>UT</state>
+			<zip>84106</zip>
+			<phone>8014635557</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+		<user>
+			<id>20</id>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<f_name>Kathleen</f_name>
+			<l_name>Barham</l_name>
+			<b_day>1973-08-02</b_day>
+			<gender>f</gender>
+			<email>KathleenGBarham@einrot.com</email>
+			<password>foDoh3Coo</password>
+			<address>31 Wilson Street</address>
+			<city>San Diego</city>
+			<state>CA</state>
+			<zip>92103</zip>
+			<phone>7608506512</phone>
+			<remember_token xsi:nil="true" remember_token>
+		</user>
+	</users>
+	<venues>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>1</id>
+			<name>MetLife Stadium</name>
+			<address>1 MetLife Stadium Drive</address>
+			<zip>07073</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>2</id>
+			<name>Philips Arena</name>
+			<address>1 Philips Drive</address>
+			<zip>30303</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>3</id>
+			<name>Staples Center</name>
+			<address>1111 South Figueroa Street</address>
+			<zip>90015</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>4</id>
+			<name>Bridgestone Arena</name>
+			<address>501 Broadway</address>
+			<zip>37203</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>5</id>
+			<name>Grand Star Jazz Club</name>
+			<address>943 Sun Mun Way</address>
+			<zip>90012</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>6</id>
+			<name>Santa Barbara Bowl</name>
+			<address>1122 North Milpas Street</address>
+			<zip>93103</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>7</id>
+			<name>9:30 Club</name>
+			<address>815 V Street NW</address>
+			<zip>20001</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>8</id>
+			<name>The Filmore</name>
+			<address>1805 Geary Boulevard</address>
+			<zip>94115</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>9</id>
+			<name>Red Rocks Ampitheatre</name>
+			<address>18300 W Alameda Parkway</address>
+			<zip>80401</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>10</id>
+			<name>The Troubadour</name>
+			<address>9081 Santa Monica Boulevard</address>
+			<zip>90069</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>11</id>
+			<name>Irving Plaza</name>
+			<address>17 Irving Place</address>
+			<zip>10003</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>12</id>
+			<name>Electric Factory</name>
+			<address>421 North 7th Street</address>
+			<zip>19123</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>13</id>
+			<name>MGM Grand Garden Arena</name>
+			<address>3799 Las Vegas Boulevard South</address>
+			<zip>89109</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>14</id>
+			<name>Beacon Theatre</name>
+			<address>2124 Broadway</address>
+			<zip>10023</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>15</id>
+			<name>House of Blues - Hollywood</name>
+			<address>8430 Sunset Boulevard</address>
+			<zip>90069</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>16</id>
+			<name>Grant Park</name>
+			<address>337 E Randolph Street</address>
+			<zip>60601</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>17</id>
+			<name>Shoreline Amphitheatre</name>
+			<address>1 Amphitheatre Parkway</address>
+			<zip>94043</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>18</id>
+			<name>Radio City Music Hall</name>
+			<address>1260 Avenue of the Americas</address>
+			<zip>10020</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>19</id>
+			<name>Showbox at the Market</name>
+			<address>1426 1st Avenue</address>
+			<zip>98101</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+		<venue>
+			<created_at>2014-11-12</created_at>
+			<updated_at>2014-11-12</updated_at>
+			<id>20</id>
+			<name>Greek Theatre</name>
+			<address>2700 North Vermont Avenue</address>
+			<zip>90027</zip>
+			<phone xsi:nil="true" phone>
+		</venue>
+	</venues>
+</music>
