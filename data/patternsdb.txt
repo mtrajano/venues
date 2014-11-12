@@ -1,0 +1,67 @@
+Pattern #1
+//Show the number of musicians playing each genre.
+
+SELECT COUNT(*) AS musician_count, categories.name AS genre 
+FROM topics INNER JOIN categories ON topics.category_id = categories.id
+GROUP BY categories.id
+ORDER BY genre_popularity DESC;
+
+Pattern #2
+//Show the number of users attending event by genre.
+
+SELECT COUNT(*) AS user_popularity, categories.name AS genre
+FROM users INNER JOIN attends
+ON users.id = attends.user_id
+INNER JOIN events
+ON events.id = attends.event_id
+INNER JOIN topics
+ON topics.id = events.topic_id
+INNER JOIN categories
+ON categories.id = topics.category_id
+GROUP BY categories.id
+ORDER BY user_popularity DESC;
+
+Pattern #3
+//Show number of users who like music of a particular genre
+
+SELECT COUNT(*) AS user_likes, categories.name AS genre
+FROM users INNER JOIN likes
+ON users.id = likes.user_id
+INNER JOIN topics
+ON topics.id = likes.topic_id
+INNER JOIN categories
+ON categories.id = topics.category_id
+GROUP BY categories.id
+ORDER BY user_likes DESC;
+
+Pattern 4
+// Number of users who like vs attend genres of a concert type.
+
+SELECT temp_likes.genre AS genre, 
+temp_likes.user_likes AS user_likes, 
+temp_attends.user_popularity AS user_attends, 
+(user_popularity/user_likes) AS percentage, 
+(user_popularity - user_likes) AS difference
+FROM 
+(SELECT COUNT(*) AS user_likes, categories.name AS genre, users.id as user_id
+FROM users INNER JOIN likes
+ON users.id = likes.user_id
+INNER JOIN topics
+ON topics.id = likes.topic_id
+INNER JOIN categories
+ON categories.id = topics.category_id
+GROUP BY categories.id
+ORDER BY user_likes DESC) temp_likes INNER JOIN
+(SELECT COUNT(*) AS user_popularity, categories.name AS genre, users.id as user_id
+FROM users INNER JOIN attends
+ON users.id = attends.user_id
+INNER JOIN events
+ON events.id = attends.event_id
+INNER JOIN topics
+ON topics.id = events.topic_id
+INNER JOIN categories
+ON categories.id = topics.category_id
+GROUP BY categories.id
+ORDER BY user_popularity DESC) temp_attends
+ON temp_likes.user_id = temp_attends.user_id
+GROUP BY temp_likes.genre ORDER BY user_attends DESC, user_likes DESC
