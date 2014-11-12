@@ -16,9 +16,9 @@ class DatabaseSeeder extends Seeder
 		$this->call('CategoryTableSeeder');
 		$this->call('LikeTableSeeder');
 		$this->call('AttendTableSeeder');
+		$this->call('VenueTableSeeder');
 		$this->call('EventTableSeeder');
 		$this->call('OrganizerTableSeeder');
-		$this->call('VenueTableSeeder');
 	}
 }
 
@@ -73,7 +73,7 @@ class AttendTableSeeder extends Seeder
 		if(($fp = fopen(base_path() . '/data/attends.csv', 'r')) !== false){
             fgetcsv($fp); //ignore first line
 			while(($arr = fgetcsv($fp)) !== false){
-				Attend::create([
+				DB::table('attends')->insert([
 					'user_id' => $arr[0],
 					'event_id' => $arr[1]
 				]);
@@ -122,7 +122,7 @@ class EventTableSeeder extends Seeder
 		if(($fp = fopen(base_path() . '/data/events.csv', 'r')) !== false){
             fgetcsv($fp); //ignore first line
 			while(($arr = fgetcsv($fp)) !== false){
-				Event::create([
+				DB::table('events')->insert([
 					'when' => $arr[0],
 					'name' => $arr[1],
 					'topic_id' => $arr[2],
