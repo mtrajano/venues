@@ -12,6 +12,9 @@ class DatabaseSeeder extends Seeder
 		Eloquent::unguard();
 
 		$this->call('UserTableSeeder');
+		$this->call('TopicTableSeeder');
+		$this->call('CategoryTableSeeder');
+		$this->call('LikeTableSeeder');
 	}
 }
 
@@ -39,6 +42,50 @@ class UserTableSeeder extends Seeder
 		}
 		else{
 			echo "Problem opening file";
+		}
+	}
+}
+
+class TopicTableSeeder extends Seeder
+{
+	public function run()
+	{
+		if(($fp = fopen(base_path() . '/data/topics.csv', 'r')) !== false){
+            fgetcsv($fp); //ignore first line
+			while(($arr = fgetcsv($fp)) !== false){
+				Topic::create([
+					'name' => $arr[0],
+					'category_id' => $arr[1],
+				]);
+			}
+		}
+	}
+}
+
+class CategoryTableSeeder extends Seeder
+{
+	public function run()
+	{
+		if(($fp = fopen(base_path() . '/data/categories.csv', 'r')) !== false){
+            fgetcsv($fp); //ignore first line
+			while(($arr = fgetcsv($fp)) !== false){
+				Category::create([
+					'name' => $arr[0]
+				]);
+			}
+		}
+	}
+}
+
+class LikeTableSeeder extends Seeder
+{
+	public function run()
+	{
+		if(($fp = fopen(base_path() . '/data/likes.csv', 'r')) !== false){
+            fgetcsv($fp); //ignore first line
+			while(($arr = fgetcsv($fp)) !== false){
+				DB::table('likes')->insert(['user_id' => $arr[0], 'topic_id' => $arr[1]]);
+			}
 		}
 	}
 }
