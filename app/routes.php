@@ -16,4 +16,8 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::resource('user', 'UserController');
+Route::resource('json/users', 'UserController');
+Route::resource('json/topics', 'TopicController');
+Route::resource('json/events', 'EventController');
+Route::resource('json/categories', 'CategoryController');
+Route::resource('json/veneus', 'VenueController');
