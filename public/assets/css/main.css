@@ -1,0 +1,30 @@
+#search-bar-wrapper{
+	width: 60%;
+	margin: 0 auto;
+}
+
+body {
+  	background-image: url("/assets/img/concert_background.jpeg");
+  	background-size: cover;
+}
+.vertical-center {
+  	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  	min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  	display: flex;
+  	align-items: center;
+}
+
+#search-box{
+	margin-top:15%;
+	width:80%;
+}
+
+#search-panel{
+	background-color: #eee;
+}
+
+#search-container{
+	width:80%;
+	margin: 40px auto;
+}

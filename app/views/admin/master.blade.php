@@ -11,6 +11,8 @@
 
     <title>Eventigo - Admin</title>
 
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
+
     <!-- Bootstrap Core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 
