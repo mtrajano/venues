@@ -18,6 +18,7 @@ Route::get('/', function()
 
 Route::get('login', ['uses' => 'HomeController@loginScreen', 'as' => 'login_url']);
 Route::post('login', ['uses' => 'HomeController@login']);
+Route::get('logout', ['uses' => 'HomeController@logout']);
 
 Route::group(['before' => 'auth'], function(){
     Route::resource('json/users', 'UserController');
