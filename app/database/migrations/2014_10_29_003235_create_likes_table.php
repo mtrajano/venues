@@ -17,9 +17,9 @@ class CreateLikesTable extends Migration {
 			$table->date('created_at');
 			$table->date('updated_at');
 			$table->string('user_id');
-			$table->bigInteger('topic_id');
+			$table->bigInteger('artist_id');
 
-		    $table->primary(['user_id', 'topic_id']);
+		    $table->primary(['user_id', 'artist_id']);
 		});
 	}
 

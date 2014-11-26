@@ -19,7 +19,7 @@ class CreateEventsTable extends Migration {
 			$table->bigIncrements('id');
 			$table->date('when');
 			$table->string('name');
-			$table->bigInteger('topic_id');
+			$table->bigInteger('artist_id');
 			$table->bigInteger('venue_id');
 			$table->bigInteger('organizer_id')->nullable();
 			$table->text('description')->nullable();
