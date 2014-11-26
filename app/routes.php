@@ -11,16 +11,13 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
-
 Route::get('login', ['uses' => 'HomeController@loginScreen', 'as' => 'login_url']);
 Route::post('login', ['uses' => 'HomeController@login']);
 Route::get('logout', ['uses' => 'HomeController@logout']);
 
 Route::group(['before' => 'auth'], function(){
+	Route::get('/', ['uses' => 'HomeController@index', 'as' => 'home']);
+	
     Route::resource('json/users', 'UserController');
     Route::resource('json/topics', 'TopicController');
     Route::resource('json/events', 'EventController');

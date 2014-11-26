@@ -55,6 +55,28 @@
                 </a>
             </div>
         </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-yellow">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-microphone fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{ count($new_artists) }}</div>
+                            <div>New Artists!</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
     <!-- /.row -->
     <div class="row">
@@ -120,6 +142,11 @@
                         <a href="#" class="list-group-item">
                             <i class="fa fa-music fa-fw"></i> New Events
                             <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-microphone fa-fw"></i> New Artists
+                            <span class="pull-right text-muted small"><em>7 minutes ago</em>
                             </span>
                         </a>
                     </div>
