@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTopicsTable extends Migration {
+class CreateArtistsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,14 +12,17 @@ class CreateTopicsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('topics', function($table)
+		Schema::create('artists', function($table)
 		{
 			$table->date('created_at');
 			$table->date('updated_at');
 			$table->bigIncrements('id');
 			$table->string('name');
-			$table->bigInteger('category_id');
+			$table->bigInteger('genre_id');
+			$table->bigInteger('artistlink_id');
+			$table->bigInteger('jambase_id')->nullable()->default(0);
 			$table->text('description')->nullable();
+
 		});
 	}
 
@@ -30,7 +33,7 @@ class CreateTopicsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('topics');
+		Schema::drop('artists');
 	}
 
 }

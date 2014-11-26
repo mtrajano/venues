@@ -4,7 +4,7 @@ class Event extends Eloquent
 {
 	protected $table = 'events';
 
-	protected $fillable = array('when', 'name', 'topic_id', 'venue_id', 'organizer_id', 'description');
+	protected $fillable = array('when', 'name', 'artist_id', 'venue_id', 'organizer_id', 'description');
 
 	public function hostedAt()
 	{
@@ -18,7 +18,7 @@ class Event extends Eloquent
 
 	public function contains()
 	{
-		return $this->hasMany('Topic');
+		return $this->hasMany('Artist');
 	}
 
 	public function attendedBy()

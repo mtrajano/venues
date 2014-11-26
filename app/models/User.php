@@ -20,7 +20,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface
 	 */
 	public function likes()
 	{
-		return $this->belongsToMany('Topic', 'likes');
+		return $this->belongsToMany('Artist', 'likes');
 	}
 
 	public function attends()

@@ -11,14 +11,9 @@ class DatabaseSeeder extends Seeder
 	{
 		Eloquent::unguard();
 
-		$this->call('UserTableSeeder');
-		$this->call('TopicTableSeeder');
-		$this->call('CategoryTableSeeder');
-		$this->call('LikeTableSeeder');
-		$this->call('AttendTableSeeder');
-		$this->call('VenueTableSeeder');
-		$this->call('EventTableSeeder');
-		$this->call('OrganizerTableSeeder');
+		// $this->call('UserTableSeeder');
+		$this->call('TestUserTableSeeder');
+		$this->call('ArtistTableSeeder');
 	}
 }
 
@@ -35,7 +30,7 @@ class UserTableSeeder extends Seeder
 					'b_day' => $arr[3],
                     'gender' => $arr[0],
 					'email' => $arr[4],
-					'password' => $arr[5],
+					'password' => Hash::make($arr[5]),
 					'address' => $arr[6],
 					'city' => $arr[7],
 					'state' => $arr[8],
@@ -50,113 +45,62 @@ class UserTableSeeder extends Seeder
 	}
 }
 
-class TopicTableSeeder extends Seeder
+class TestUserTableSeeder extends Seeder
 {
 	public function run()
 	{
-		if(($fp = fopen(base_path() . '/data/topics.csv', 'r')) !== false){
-            fgetcsv($fp); //ignore first line
-			while(($arr = fgetcsv($fp)) !== false){
-				Topic::create([
-					'name' => $arr[0],
-					'category_id' => $arr[1],
-				]);
-			}
-		}
+		$admin = User::create([
+			'f_name' => 'Tomasz',
+			'l_name' => 'Imielinski',
+			'b_day' => '1950-01-01',
+            'gender' => 'M',
+			'email' => 'tomaszi@gmail.com',
+			'password' => Hash::make('CS336Project'),
+			'address' => '123 Rutgers St',
+			'city' => 'New Brunswick',
+			'state' => 'NJ',
+			'zip' => '07134',
+			'phone' => '123-456-7890',
+		]);
+		$admin->admin = true;
+		$admin->save();
+
+		$user = User::create([
+			'f_name' => 'Data',
+			'l_name' => 'Student',
+			'b_day' => '1990-01-01',
+            'gender' => 'M',
+			'email' => 'student@gmail.com',
+			'password' => Hash::make('CS336Project'),
+			'address' => '456 Rutgers St',
+			'city' => 'New Brunswick',
+			'state' => 'NJ',
+			'zip' => '07134',
+			'phone' => '123-456-7890',
+			'admin' => false
+		]);
 	}
 }
 
-class AttendTableSeeder extends Seeder
+class ArtistTableSeeder extends Seeder
 {
 	public function run()
 	{
-		if(($fp = fopen(base_path() . '/data/attends.csv', 'r')) !== false){
-            fgetcsv($fp); //ignore first line
-			while(($arr = fgetcsv($fp)) !== false){
-				DB::table('attends')->insert([
-					'user_id' => $arr[0],
-					'event_id' => $arr[1]
-				]);
-			}
-		}
+        //read in json format
+        $input = file_get_contents(base_path() . '/data/artists.json');
+        $json = json_decode($input);
+
+        foreach($json as $json_obj){
+            if (! $json_obj->genre) {
+                continue;
+            }
+
+            Artist::create([
+                'name' => $json_obj->name,
+                'genre_id' => Genre::firstOrCreate(['name' => $json_obj->genre])->id,
+                'artistlink_id' => $json_obj->id,
+            ]);
+        }
 	}
 }
 
-class OrganizerTableSeeder extends Seeder
-{
-	public function run()
-	{
-		if(($fp = fopen(base_path() . '/data/organizers.csv', 'r')) !== false){
-            fgetcsv($fp); //ignore first line
-			while(($arr = fgetcsv($fp)) !== false){
-				Organizer::create([
-					'name' => $arr[0],
-					'email' => $arr[1]
-				]);
-			}
-		}
-	}
-}
-
-class VenueTableSeeder extends Seeder
-{
-	public function run()
-	{
-		if(($fp = fopen(base_path() . '/data/venues.csv', 'r')) !== false){
-            fgetcsv($fp); //ignore first line
-			while(($arr = fgetcsv($fp)) !== false){
-				Venue::create([
-					'name' => $arr[0],
-					'address' => $arr[1],
-					'zip' => $arr[2]
-				]);
-			}
-		}
-	}
-}
-
-class EventTableSeeder extends Seeder
-{
-	public function run()
-	{
-		if(($fp = fopen(base_path() . '/data/events.csv', 'r')) !== false){
-            fgetcsv($fp); //ignore first line
-			while(($arr = fgetcsv($fp)) !== false){
-				DB::table('events')->insert([
-					'when' => $arr[0],
-					'name' => $arr[1],
-					'topic_id' => $arr[2],
-					'venue_id' => $arr[3]
-				]);
-			}
-		}
-	}
-}
-
-class CategoryTableSeeder extends Seeder
-{
-	public function run()
-	{
-		if(($fp = fopen(base_path() . '/data/categories.csv', 'r')) !== false){
-            fgetcsv($fp); //ignore first line
-			while(($arr = fgetcsv($fp)) !== false){
-				Category::create([
-					'name' => $arr[0]
-				]);
-			}
-		}
-	}
-}
-
-class LikeTableSeeder extends Seeder
-{
-	public function run()
-	{
-		if(($fp = fopen(base_path() . '/data/likes.csv', 'r')) !== false){
-            fgetcsv($fp); //ignore first line
-			while(($arr = fgetcsv($fp)) !== false){
-				DB::table('likes')->insert(['user_id' => $arr[0], 'topic_id' => $arr[1]]);
-			}
-		}
-	}
-}

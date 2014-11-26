@@ -48,6 +48,11 @@ Route::filter('auth', function()
 	}
 });
 
+Route::filter('admin', function(){
+    if(!Auth::user()->admin){
+        return Redirect::back()->withMessage('Unauthorized access, must be admin to access this page.');
+    }
+});
 
 Route::filter('auth.basic', function()
 {

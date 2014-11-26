@@ -16,8 +16,17 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::resource('json/users', 'UserController');
-Route::resource('json/topics', 'TopicController');
-Route::resource('json/events', 'EventController');
-Route::resource('json/categories', 'CategoryController');
-Route::resource('json/veneus', 'VenueController');
+Route::get('login', ['uses' => 'HomeController@loginScreen', 'as' => 'login_url']);
+Route::post('login', ['uses' => 'HomeController@login']);
+
+Route::group(['before' => 'auth'], function(){
+    Route::resource('json/users', 'UserController');
+    Route::resource('json/topics', 'TopicController');
+    Route::resource('json/events', 'EventController');
+    Route::resource('json/categories', 'CategoryController');
+    Route::resource('json/veneus', 'VenueController');
+});
+
+Route::group(['before' => 'auth|admin'], function(){
+    Route::get('admin', ['uses' => 'AdminController@index', 'as' => 'admin_url']);
+});
