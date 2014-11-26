@@ -50,7 +50,10 @@ Route::filter('auth', function()
 
 Route::filter('admin', function(){
     if(!Auth::user()->admin){
-        return Redirect::back()->withMessage('Unauthorized access, must be admin to access this page.');
+    	if(!Request::header('referer')){
+    		return Redirect::to('/')->withError('Unauthorized access, must be admin to access this page.');
+    	}
+        return Redirect::back()->withError('Unauthorized access, must be admin to access this page.');
     }
 });
 

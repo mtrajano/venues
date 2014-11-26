@@ -1,4 +1,6 @@
-<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+@extends('master')
+
+@section('content')
 
 <div class="container">    
     <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
@@ -41,11 +43,11 @@
 
                         <div class="form-group">
                             <div class="col-md-12 control">
-                                <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-                                    Don't have an account!
-                                    <div id="signup">
+                                <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%; margin-top:5px" >
+                                    Don't have an account?
+                                    <div id="signup" style="display:inline">
 	                                    <a href="#">
-                                    	    Sign Up Here
+                                    	    Sign Up Here!
                                     	</a>
                                     </div>
                                 </div>
@@ -118,9 +120,9 @@
      </div> 
 </div>
 
+@stop
 
-<script src="/assets/js/jquery.min.js" ></script>
-<script src="/assets/js/bootstrap.min.js" ></script>
+@section('scripts')
 
 <script>
 $(function(){
@@ -130,3 +132,5 @@ $(function(){
 	});	
 });
 </script>
+
+@stop

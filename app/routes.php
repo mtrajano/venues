@@ -28,5 +28,5 @@ Route::group(['before' => 'auth'], function(){
 });
 
 Route::group(['before' => 'auth|admin'], function(){
-    Route::get('admin', ['uses' => 'AdminController@index', 'as' => 'admin_url']);
+    Route::get('admin', ['uses' => 'DashboardController@index', 'as' => 'admin_url']);
 });

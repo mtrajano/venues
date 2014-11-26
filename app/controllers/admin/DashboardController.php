@@ -1,6 +1,6 @@
 <?php
 
-class AdminController extends \BaseController {
+class DashboardController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
