@@ -9,7 +9,7 @@ class TopicController extends \BaseController {
 	 */
 	public function index()
 	{
-		return Response::json(Topic::all());	
+		//	
 	}
 
 

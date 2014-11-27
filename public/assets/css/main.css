@@ -1,9 +1,10 @@
-#search-bar-wrapper{
-	width: 60%;
-	margin: 0 auto;
-}
-
-body {
+/**
+ * index.php
+ **/
+#background-img{
+	position:absolute;
+	width:100%;
+	height:100%;
   	background-image: url("/assets/img/concert_background.jpeg");
   	background-size: cover;
 }
@@ -13,6 +14,11 @@ body {
 
   	display: flex;
   	align-items: center;
+}
+
+#search-desc{
+	font-size:1.2em;
+	margin-bottom: 20px;
 }
 
 #search-box{

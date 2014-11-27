@@ -9,7 +9,7 @@ class VenueController extends \BaseController {
 	 */
 	public function index()
 	{
-		return Response::json(Venue::all());	
+		//	
 	}
 
 
