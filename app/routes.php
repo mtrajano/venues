@@ -18,11 +18,13 @@ Route::get('logout', ['uses' => 'HomeController@logout']);
 Route::group(['before' => 'auth'], function(){
 	Route::get('/', ['uses' => 'HomeController@index', 'as' => 'home']);
 	
-    Route::resource('json/users', 'UserController');
-    Route::resource('json/topics', 'TopicController');
-    Route::resource('json/events', 'EventController');
-    Route::resource('json/categories', 'CategoryController');
-    Route::resource('json/veneus', 'VenueController');
+    Route::resource('users', 'UserController');
+    Route::resource('topics', 'TopicController');
+    Route::resource('events', 'EventController');
+    Route::resource('categories', 'CategoryController');
+    Route::resource('veneus', 'VenueController');
+
+    Route::get('json/get-data/{model}/{id?}', ['uses' => 'DataController@getJsonResponse']);
 });
 
 Route::group(['before' => 'auth|admin'], function(){

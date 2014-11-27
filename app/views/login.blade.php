@@ -102,9 +102,9 @@
                     </div>
                         
                     <div class="form-group">
-                        <label for="icode" class="col-md-3 control-label">Invitation Code</label>
+                        <label for="icode" class="col-md-3 control-label">Confirm</label>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" name="icode" placeholder="">
+                            <input type="text" class="form-control" name="icode" placeholder="Confirm Password">
                         </div>
                     </div>
 

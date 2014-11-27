@@ -9,7 +9,7 @@ class EventController extends \BaseController {
 	 */
 	public function index()
 	{
-		return Response::json(Event::all());	
+		//	
 	}
 
 
