@@ -19,9 +19,9 @@ Route::get('logout', ['uses' => 'HomeController@logout']);
 
 Route::group(['before' => 'auth'], function(){
     Route::resource('users', 'UserController');
-    Route::resource('topics', 'TopicController');
+    Route::resource('artists', 'ArtistController');
     Route::resource('events', 'EventController');
-    Route::resource('categories', 'CategoryController');
+    Route::resource('genres', 'GenreController');
     Route::resource('veneus', 'VenueController');
 
     Route::get('json/get-data/{model}/{id?}', ['uses' => 'DataController@getJsonResponse']);

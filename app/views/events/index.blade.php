@@ -4,7 +4,7 @@
 
 <div id="page-wrapper">
 	<div class="page-header">
-		<h1>Users</h1>
+		<h1>Events</h1>
 	</div>
 </div>
 

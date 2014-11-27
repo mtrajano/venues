@@ -1,6 +1,6 @@
 <?php
 
-class TopicController extends \BaseController {
+class GenreController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -9,7 +9,7 @@ class TopicController extends \BaseController {
 	 */
 	public function index()
 	{
-		//	
+		//
 	}
 
 

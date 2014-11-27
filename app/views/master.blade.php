@@ -37,7 +37,7 @@
 		</div>
 	@endif
 
-	<nav class="navbar navbar-default" role="navigation" style="z-index: 999">
+	<nav class="navbar navbar-default" role="navigation" style="z-index: 999; border-bottom: 1px solid #BABABA">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -50,13 +50,21 @@
 	      <a class="navbar-brand" href="{{ URL::to('/') }}">Eventigo</a>
 	    </div>
 
-	    <ul class="nav navbar-nav navbar-right">
-	    	@if(Auth::check())
-	    		<li><a href="{{ URL::to('logout') }}">Logout</a></li>
-	    	@else
+	    @if(Auth::check())
+		    <ul class="nav navbar-nav">
+		        <li class="active"><a href="{{ URL::to('users') }}">Users <span class="sr-only">(current)</span></a></li>
+		        <li><a href="{{ URL::to('artists') }}">Artists</a></li>
+		        <li><a href="{{ URL::to('events') }}">Events</a></li>
+	        </ul>
+	        <ul class="nav navbar-nav navbar-right">
+				<li><a href="{{ URL::to('logout') }}">Logout</a></li>
+			</ul>
+    	@else
+	    	<ul class="nav navbar-nav navbar-right">
 	    		<li><a href="{{ URL::to('login') }}">Login</a></li>
-	    	@endif
-        </ul>
+    		</ul>
+    	@endif
+
 	  </div>
 	</nav>
 
