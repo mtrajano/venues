@@ -1,6 +1,6 @@
 <?php
 
-class CategoryController extends \BaseController {
+class ArtistController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -9,7 +9,7 @@ class CategoryController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		return View::make('artists.index');		
 	}
 
 
