@@ -11,13 +11,13 @@
 |
 */
 
+Route::get('/', ['uses' => 'HomeController@index', 'as' => 'home']);
+
 Route::get('login', ['uses' => 'HomeController@loginScreen', 'as' => 'login_url']);
 Route::post('login', ['uses' => 'HomeController@login']);
 Route::get('logout', ['uses' => 'HomeController@logout']);
 
 Route::group(['before' => 'auth'], function(){
-	Route::get('/', ['uses' => 'HomeController@index', 'as' => 'home']);
-	
     Route::resource('users', 'UserController');
     Route::resource('topics', 'TopicController');
     Route::resource('events', 'EventController');

@@ -33,10 +33,10 @@ class HomeController extends BaseController {
         if (Auth::attempt(array('email' => $email, 'password' => $password)))
         {
             if(Auth::user()->admin == 1){
-                return Redirect::to('admin');
+                return Redirect::intended('admin');
             }
             else{
-                return Redirect::to('/');    
+                return Redirect::intended('/'); 
             }
         }
     }
@@ -45,7 +45,7 @@ class HomeController extends BaseController {
     {
         Auth::logout();
 
-        return Redirect::to('login');
+        return Redirect::to('/');
     }
 
 }
