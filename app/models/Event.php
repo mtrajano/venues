@@ -8,17 +8,12 @@ class Event extends Eloquent
 
 	public function hostedAt()
 	{
-		return $this->hasOne('Venue');
-	}
-
-	public function organizedBy()
-	{
-		return $this->hasOne('Organizer');
+		return $this->belongsTo('Venue');
 	}
 
 	public function contains()
 	{
-		return $this->hasMany('Artist');
+		return $this->belongsTo('Artist');
 	}
 
 	public function attendedBy()
