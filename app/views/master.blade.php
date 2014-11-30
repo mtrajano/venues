@@ -16,6 +16,9 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="/assets/css/main-user.css">
+
+	<!-- <link rel="stylesheet" type="text/css" href="/assets/css/simple-table.css"> -->
+	
 </head>
 
 <body>
@@ -37,7 +40,7 @@
 		</div>
 	@endif
 
-	<nav class="navbar navbar-default" role="navigation" style="z-index: 999; border-bottom: 1px solid #BABABA">
+	<nav class="navbar navbar-default" role="navigation" style="z-index: 999; border-bottom: 1px solid #EBEBEB">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -52,7 +55,7 @@
 
 	    @if(Auth::check())
 		    <ul class="nav navbar-nav">
-		        <li class="active"><a href="{{ URL::to('users') }}">Users <span class="sr-only">(current)</span></a></li>
+		        <li><a href="{{ URL::to('users') }}">Users</a></li>
 		        <li><a href="{{ URL::to('artists') }}">Artists</a></li>
 		        <li><a href="{{ URL::to('events') }}">Events</a></li>
 	        </ul>
