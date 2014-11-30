@@ -24,7 +24,8 @@ Route::group(['before' => 'auth'], function(){
     Route::resource('genres', 'GenreController');
     Route::resource('veneus', 'VenueController');
 
-    Route::get('json/get-data/{model}/{id?}', ['uses' => 'DataController@getJsonResponse']);
+    Route::get('get-data/json/{model}/{id?}', ['uses' => 'DataController@getJsonResponse']);
+    Route::get('get-data/xml/{model}/{id?}', ['uses' => 'DataController@getXMLResponse']);
 });
 
 Route::group(['before' => 'auth|admin'], function(){
