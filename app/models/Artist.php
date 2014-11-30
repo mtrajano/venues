@@ -6,9 +6,9 @@ class Artist extends Eloquent
 
 	protected $fillable = array('name', 'genre_id', 'description');
 
-	public function classifiedAs()
+	public function genre()
 	{
-		return $this->hasOne('Genre');
+		return $this->belongsTo('Genre');
 	}
 
 	public function likedBy() //might not be necessary

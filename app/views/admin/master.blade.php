@@ -64,7 +64,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; z-index: 999; border-bottom: 1px solid #EBEBEB">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -72,9 +72,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand" href="{{ URL::to('/') }}">Eventigo</a>
             </div>
             <!-- /.navbar-header -->
 
+            <ul class="nav navbar-nav">
+                <li><a href="{{ URL::to('users') }}">Users</a></li>
+                <li><a href="{{ URL::to('artists') }}">Artists</a></li>
+                <li><a href="{{ URL::to('events') }}">Events</a></li>
+            </ul>
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">

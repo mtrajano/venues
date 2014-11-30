@@ -8,6 +8,6 @@ class Genre extends Eloquent
 
 	public function artists()
 	{
-		return $this->belongsTo('Artist');
+		return $this->hasMany('Artist');
 	}
 }

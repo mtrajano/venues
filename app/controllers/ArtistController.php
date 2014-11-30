@@ -9,7 +9,8 @@ class ArtistController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('artists.index');		
+		$artists = Artist::paginate(10);
+		return View::make('artists.index')->with('artists', $artists);		
 	}
 
 
