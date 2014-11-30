@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+
 <!DOCTYPE music [
 <!ELEMENT attends(attend*)>
 <!ELEMENT venues(venue*)>
@@ -10,17 +11,41 @@
 <!ELEMENT categories(category*)>
 
 <!ELEMENT attend(created_at, updated_at, user_id, event_id)>
-<!ELEMENT venue(created_at, updated_at, id, when, event_i)>
-			<created_at>2014-11-12</created_at>
-			<updated_at>2014-11-12</updated_at>
-			<id>1</id>
-			<when>2014-12-01</when>
-			<name>Bonaroo</name>
-			<topic_id>1</topic_id>
-			<venue_id>16</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
-			<description xsi:nil="true" description>
+<!ELEMENT venue(created_at, updated_at, id, name, address, zip, phone)>
+<!ELEMENT user(created_at, updated_at, f_name, l_name, b_day, gender, email, password, address,city, state, zip, phone, remember_token)>
+<!ELEMENT event(created_at, updated_at, id, when, name, topic_id, venue_id, organizer_id, description)>
+<!ELEMENT like(created_at, updated_at, user_id, topic_id)>
+<!ELEMENT organizer(created_at, updated_at, id, name, email, phone)>
+<!ELEMENT topic(created_at, updated_at, id, name, category_id, description)>
+<!ELEMENT category(created_at, updated_at, id, name, description)>
+
+<!ELEMENT created_at(#PCDATA)>
+<!ELEMENT updated_at(#PCDATA)>
+<!ELEMENT id(#PCDATA)>
+<!ELEMENT user_id(#PCDATA)>
+<!ELEMENT event_id(#PCDATA)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT zip(#PCDATA)>
+<!ELEMENT phone(#PCDATA)>
+<!ELEMENT f_name(#PCDATA)>
+<!ELEMENT l_name(#PCDATA)>
+<!ELEMENT b_day(#PCDATA)>
+<!ELEMENT gender(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT password(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT city(#PCDATA)>
+<!ELEMENT state(#PCDATA)>
+<!ELEMENT remember_token(#PCDATA)>
+<!ELEMENT when(#PCDATA)>
+<!ELEMENT topic_id(#PCDATA)>
+<!ELEMENT venue_id(#PCDATA)>
+<!ELEMENT organizer_id(#PCDATA)>
+<!ELEMENT description(#PCDATA)>
+<!ELEMENT category_id(#PCDATA)>
 ]>
+
 <music>
 	<attends>
 		<attend>
@@ -309,7 +334,7 @@
 			<name>Bonaroo</name>
 			<topic_id>1</topic_id>
 			<venue_id>16</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -320,7 +345,7 @@
 			<name>Warped Tour</name>
 			<topic_id>5</topic_id>
 			<venue_id>6</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -331,7 +356,7 @@
 			<name>Electric Daisy Carnival</name>
 			<topic_id>11</topic_id>
 			<venue_id>12</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -342,7 +367,7 @@
 			<name>SXSW</name>
 			<topic_id>1</topic_id>
 			<venue_id>16</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -353,7 +378,7 @@
 			<name>iHeartRadio Music Festival</name>
 			<topic_id>15</topic_id>
 			<venue_id>1</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -364,7 +389,7 @@
 			<name>Coachella</name>
 			<topic_id>14</topic_id>
 			<venue_id>19</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -375,7 +400,7 @@
 			<name>Lollapalooza</name>
 			<topic_id>5</topic_id>
 			<venue_id>16</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -386,7 +411,7 @@
 			<name>iTunes Festival</name>
 			<topic_id>15</topic_id>
 			<venue_id>1</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -397,7 +422,7 @@
 			<name>Bamboozle</name>
 			<topic_id>4</topic_id>
 			<venue_id>9</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -408,7 +433,7 @@
 			<name>Highland Jazz Festival</name>
 			<topic_id>17</topic_id>
 			<venue_id>5</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -419,7 +444,7 @@
 			<name>Country Fest</name>
 			<topic_id>8</topic_id>
 			<venue_id>17</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -430,7 +455,7 @@
 			<name>Watershed Music Festival</name>
 			<topic_id>6</topic_id>
 			<venue_id>15</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -441,7 +466,7 @@
 			<name>Goodstock Music Festival</name>
 			<topic_id>2</topic_id>
 			<venue_id>16</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -452,7 +477,7 @@
 			<name>Decibel Festival</name>
 			<topic_id>10</topic_id>
 			<venue_id>13</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -463,7 +488,7 @@
 			<name>The Echo Project</name>
 			<topic_id>9</topic_id>
 			<venue_id>13</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -474,7 +499,7 @@
 			<name>Epicenter</name>
 			<topic_id>7</topic_id>
 			<venue_id>14</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -485,7 +510,7 @@
 			<name>Audiotistic Music Festival</name>
 			<topic_id>18</topic_id>
 			<venue_id>8</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -496,7 +521,7 @@
 			<name>DeltaFest</name>
 			<topic_id>12</topic_id>
 			<venue_id>12</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -507,7 +532,7 @@
 			<name>Krazy Fest</name>
 			<topic_id>16</topic_id>
 			<venue_id>8</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 		<event>
@@ -518,7 +543,7 @@
 			<name>Atwood Music Festival</name>
 			<topic_id>19</topic_id>
 			<venue_id>8</venue_id>
-			<organizer_id xsi:nil="true" organizer_id>
+			<organizer_id xsi:nil="true" ></organizer_id>
 			<description xsi:nil="true" description>
 		</event>
 	</events>
