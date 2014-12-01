@@ -27,7 +27,7 @@ class CreateUsersTable extends Migration {
 			$table->string('city')->nullable(); //could be integer(5) as well
 			$table->char('state', 2)->nullable(); //could be integer(5) as well
 			$table->char('zip', 5); //could be integer(5) as well
-			$table->char('phone', 10)->nullable();
+			$table->char('phone', 12)->nullable();
 			$table->boolean('admin')->default(false);
 			$table->rememberToken();
 		});

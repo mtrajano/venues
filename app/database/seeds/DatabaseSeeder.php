@@ -12,11 +12,12 @@ class DatabaseSeeder extends Seeder
 		Eloquent::unguard();
 
 		// $this->call('UserTableSeeder');
-		$this->call('TestUserTableSeeder');
-		$this->call('GenreTableSeeder');
-		$this->call('ArtistTableSeeder');
-		$this->call('VenueTableSeeder');
-		$this->call('ShowTableSeeder');
+		// $this->call('TestUserTableSeeder');
+		// $this->call('GenreTableSeeder');
+		// $this->call('ArtistTableSeeder');
+		// $this->call('VenueTableSeeder');
+		// $this->call('ShowTableSeeder');
+		$this->call('LikeTableSeeder');
 	}
 }
 
@@ -27,19 +28,25 @@ class UserTableSeeder extends Seeder
 		if(($fp = fopen(base_path() . '/data/users.csv', 'r')) !== false){
             fgetcsv($fp); //ignore first line
 			while(($arr = fgetcsv($fp)) !== false){
-				User::create([
-					'f_name' => $arr[1],
-					'l_name' => $arr[2],
-					'b_day' => $arr[3],
-                    'gender' => $arr[0],
-					'email' => $arr[4],
-					'password' => Hash::make($arr[5]),
-					'address' => $arr[6],
-					'city' => $arr[7],
-					'state' => $arr[8],
-					'zip' => $arr[9],
-					'phone' => $arr[10],
-				]);
+				try {
+					User::create([
+						'f_name' => $arr[0],
+						'l_name' => $arr[1],
+						'b_day' => $arr[2],
+	                    'gender' => $arr[3],
+						'email' => $arr[4],
+						'password' => Hash::make($arr[5]),
+						'address' => $arr[6],
+						'city' => $arr[7],
+						'state' => $arr[8],
+						'zip' => $arr[9],
+						'phone' => $arr[10],
+					]);
+				}
+				catch(Exception $e){
+					//in case any of the generated emails were not unique
+					continue;
+				}
 			}
 		}
 		else{
@@ -105,7 +112,7 @@ class ArtistTableSeeder extends Seeder
 			Artist::create([
 				'name' => $json_obj->name,
 				'jambase_id' => $json_obj->jambase_id,
-				'number_likes' => str_replace( ',', '', $json_obj->number_fans)
+				'number_likes' => (str_replace( ',', '', $json_obj->number_fans) > 20000) ? ($json_obj->number_fans / 10) : $json_obj->number_fans //only 20000 users
 			]);
 		}
 
@@ -141,7 +148,7 @@ class VenueTableSeeder extends Seeder
 		}
 
 		//malformatted data
-		Venue::where('name', 'The Monterey Club')->update(['city' => 'Fort Lauderdale', 'state' => 'FL', 'zip' => '33316'])
+		Venue::where('name', 'The Monterey Club')->update(['city' => 'Fort Lauderdale', 'state' => 'FL', 'zip' => '33316']);
     }
 }
 
@@ -163,4 +170,29 @@ class ShowTableSeeder extends Seeder
 	}
 }
 
+class LikeTableSeeder extends Seeder
+{
+	public function run()
+	{
+		$artists = Artist::all();
+        $users = User::all()->toArray();
+
+		foreach($artists as $artist){
+			if($artist->number_likes == 0){
+				continue;
+			}
+
+			$rand_users = array_rand($users, $artist->number_likes);
+
+			if($artist->number_likes == 1){
+				User::find($users[$rand_users]['id'])->likes()->attach($artist->id);
+				continue;
+			}
+
+			foreach($rand_users as $index){
+				User::find($users[$index]['id'])->likes()->attach($artist->id);
+			}
+		}
+	}
+}
 
