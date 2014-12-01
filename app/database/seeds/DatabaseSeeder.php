@@ -17,8 +17,9 @@ class DatabaseSeeder extends Seeder
 		// $this->call('ArtistTableSeeder');
 		// $this->call('VenueTableSeeder');
 		// $this->call('ShowTableSeeder');
-		$this->call('TicketTableSeeder');
+		// $this->call('TicketTableSeeder');
 		// $this->call('LikeTableSeeder');
+		$this->call('AttendTableSeeder');
 	}
 }
 
@@ -219,6 +220,23 @@ class LikeTableSeeder extends Seeder
 
 			foreach($rand_users as $index){
 				User::find($users[$index]['id'])->likes()->attach($artist->id);
+			}
+		}
+	}
+}
+
+class AttendTableSeeder extends Seeder
+{
+	public function run()
+	{
+		$num_attends = DB::select(DB::raw('SELECT show_id, SUM(num_sales) as num_attends FROM tickets GROUP BY show_id'));
+		$users = User::all()->toArray();
+
+		foreach($num_attends as $show_attended){
+			$rand_users = array_rand($users, $show_attended->num_attends);
+
+			foreach($rand_users as $index){
+				User::find($users[$index]['id'])->attends()->attach($show_attended->show_id);
 			}
 		}
 	}
