@@ -18,8 +18,11 @@ class CreateVenuesTable extends Migration {
 			$table->date('updated_at');
 			$table->bigIncrements('id');
 			$table->string('name');
-			$table->string('address');
-			$table->char('zip', 5); //could be integer(5) as well
+			$table->string('address')->nullable();
+			$table->string('city')->nullable();
+			$table->char('state', 2)->nullable();
+			$table->char('zip', 5)->nullable(); //could be integer(5) as well
+			$table->bigInteger('jambase_id')->nullable();
 			$table->char('phone', 10)->nullable();
 		});
 	}

@@ -17,9 +17,9 @@ class CreateAttendsTable extends Migration {
 			$table->date('created_at');
 			$table->date('updated_at');
 			$table->string('user_id');
-			$table->bigInteger('event_id');
+			$table->bigInteger('show_id');
 
-		    $table->primary(['user_id', 'event_id']);
+		    $table->primary(['user_id', 'show_id']);
 		});
 	}
 
