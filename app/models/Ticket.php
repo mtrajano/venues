@@ -4,5 +4,5 @@ class Ticket extends Eloquent
 {
 	protected $table = 'tickets';
 
-	protected $fillable = array('name', 'genre_id', 'description');
+	protected $fillable = array('show_id', 'price', 'num_sales');
 }
