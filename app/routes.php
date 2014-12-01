@@ -17,6 +17,9 @@ Route::get('login', ['uses' => 'HomeController@loginScreen', 'as' => 'login_url'
 Route::post('login', ['uses' => 'HomeController@login']);
 Route::get('logout', ['uses' => 'HomeController@logout']);
 
+Route::get('json/friendsfinder', ['uses' => 'FriendsFinderController@search']);
+Route::get('json/eventsfinder', ['uses' => 'EventsFinderController@search']);
+
 Route::group(['before' => 'auth'], function(){
     Route::resource('users', 'UserController');
     Route::resource('artists', 'ArtistController');
