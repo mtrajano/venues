@@ -8,6 +8,6 @@ class Venue extends Eloquent
 
 	public function hosted()
 	{
-		return $this->hasMany('Event');
+		return $this->hasMany('Show');
 	}
 }
