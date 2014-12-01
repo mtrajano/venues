@@ -1,6 +1,6 @@
 <?php
 
-class EventController extends \BaseController {
+class ShowController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -9,7 +9,7 @@ class EventController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('events.index');	
+		return View::make('shows.index');	
 	}
 
 

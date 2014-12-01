@@ -1,8 +1,8 @@
 <?php
 
-class Event extends Eloquent
+class Show extends Eloquent
 {
-	protected $table = 'events';
+	protected $table = 'shows';
 
 	protected $fillable = array('when', 'name', 'artist_id', 'venue_id', 'organizer_id', 'description');
 
