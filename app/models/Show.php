@@ -11,7 +11,7 @@ class Show extends Eloquent
 		return $this->belongsTo('Venue');
 	}
 
-	public function contains()
+	public function artist()
 	{
 		return $this->belongsTo('Artist');
 	}

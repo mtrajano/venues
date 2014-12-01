@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
 		// $this->call('ArtistTableSeeder');
 		// $this->call('VenueTableSeeder');
 		// $this->call('ShowTableSeeder');
-		$this->call('LikeTableSeeder');
+		$this->call('TicketTableSeeder');
+		// $this->call('LikeTableSeeder');
 	}
 }
 
@@ -167,6 +168,33 @@ class ShowTableSeeder extends Seeder
                 'venue_id' => Venue::firstOrCreate(['name' => $json_obj->venue])
             ]);
         }
+	}
+}
+
+class TicketTableSeeder extends Seeder
+{
+	public function get_num_sales($num_likes, $price)
+	{
+		return (0.3 * ( 5*$num_likes + 1000) + 0.75 * (4455 - 30*$price) ) + (rand(0,40) - 20); //random noise
+	}
+
+	public function run()
+	{
+		$shows = Show::all();
+
+		foreach($shows as $show){
+			$num_seats = rand(1,3); //random number of seats (1-3 seats)
+
+			for($i=0; $i<$num_seats; $i++){
+				$price = rand(4,15) * 10; //prices for seats range from $40-$150
+
+				Ticket::create([
+					'show_id' => $show->id,
+					'price' => $price,
+					'num_sales' => $this->get_num_sales($show->artist->number_likes, $price)
+				]);
+			}
+		}
 	}
 }
 
