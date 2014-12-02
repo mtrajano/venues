@@ -9,7 +9,8 @@ class ShowController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('shows.index');	
+		$shows = Show::paginate(10);
+		return View::make('shows.index')->with('shows', $shows);	
 	}
 
 
