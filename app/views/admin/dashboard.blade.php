@@ -19,7 +19,7 @@
                             <i class="fa fa-users fa-5x"></i>
                         </div>
                         <div class="col-xs-9 text-right">
-                            <div class="huge">{{ count($new_users) }}</div>
+                            <div class="huge">{{ count($data['new_users']) }}</div>
                             <div>New Users!</div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                             <i class="fa fa-music fa-5x"></i>
                         </div>
                         <div class="col-xs-9 text-right">
-                            <div class="huge">{{ count($new_events) }}</div>
+                            <div class="huge">{{ count($data['new_events']) }}</div>
                             <div>New Events!</div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                             <i class="fa fa-microphone fa-5x"></i>
                         </div>
                         <div class="col-xs-9 text-right">
-                            <div class="huge">{{ count($new_artists) }}</div>
+                            <div class="huge">{{ count($data['new_artists']) }}</div>
                             <div>New Artists!</div>
                         </div>
                     </div>
