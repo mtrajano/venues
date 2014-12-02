@@ -10,8 +10,13 @@ class DashboardController extends \BaseController {
 	public function index()
 	{
 		$new_users = DB::select(DB::raw('SELECT * FROM users WHERE created_at > NOW() - INTERVAL 1 WEEK'));
-		$new_events = DB::select(DB::raw('SELECT * FROM events WHERE created_at > NOW() - INTERVAL 1 WEEK'));
+		$new_events = DB::select(DB::raw('SELECT * FROM shows WHERE created_at > NOW() - INTERVAL 1 WEEK'));
 		$new_artists = DB::select(DB::raw('SELECT * FROM artists WHERE created_at > NOW() - INTERVAL 1 WEEK'));
-		return View::make('admin.dashboard')->with('new_users', $new_users)->with('new_events', $new_events)->with('new_artists', $new_artists);	
+		$data=[
+			'new_users' => $new_users,
+			'new_events' => $new_events,
+			'new_artists' => $new_artists
+		];
+		return View::make('admin.dashboard')->with('data', $data);	
 	}
 }
