@@ -13,7 +13,10 @@
                 <!-- /input-group -->
             </li>
             <li>
-                <a class="active" href="{{ URL::to('/admin') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                <a href="{{ URL::to('/admin') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+            </li>
+            <li>
+                <a href="{{ URL::to('/admin/data') }}"><i class="fa fa-line-chart fa-fw"></i> Data</a>
             </li>
         </ul>
     </div>

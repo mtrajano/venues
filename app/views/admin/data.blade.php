@@ -48,7 +48,7 @@ $(function(){
 	chart.addMeasureAxis("z", "profit");
 	x.addOrderRule("price");
 	y.addOrderRule(["0", "1-20", "20-100", "100-1000", "1000+"]);
-	chart.addSeries(["name, number_likes, price"], dimple.plot.bubble);
+	chart.addSeries(["number_likes, price"], dimple.plot.bubble);
 	chart.addLegend(180, 10, 360, 20, "right");
 	chart.draw();
 });
