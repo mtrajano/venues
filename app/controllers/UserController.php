@@ -9,7 +9,8 @@ class UserController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('users.index');
+		$users = User::paginate(10);
+		return View::make('users.index')->with('users', $users);
 	}
 
 

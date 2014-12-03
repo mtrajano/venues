@@ -23,7 +23,7 @@ Route::get('json/eventsfinder', ['uses' => 'EventsFinderController@search']);
 Route::group(['before' => 'auth'], function(){
     Route::resource('users', 'UserController');
     Route::resource('artists', 'ArtistController');
-    Route::resource('events', 'EventController');
+    Route::resource('events', 'ShowController');
     Route::resource('genres', 'GenreController');
     Route::resource('veneus', 'VenueController');
 
