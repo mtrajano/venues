@@ -9,26 +9,27 @@
 
 	<table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example">
 		<thead>
-			<th>Name</th>
 			<th>Date</th>
-			<th>Location</th>
 			<th>Artist</th>
-			<th>Description</th>
+			<th>City</th>
+			<th>State</th>
 		</thead>
 		<tbody>
 			@foreach($shows as $show)
 				<tr>
-					<td> {{ $show->name }} </td>
 					<td> {{ $show->when }} </td>
-					<td> @if($show->hostedAt)
-							{{ $show->hostedAt->name }} 
-						@endif
-					</td>
 					<td> @if($show->artist)
 						{{ $show->artist->name }}
 						@endif
 					</td>
-					<td> {{ $show->description }} </td>
+					<td> @if($show->hostedAt->city)
+							{{ $show->hostedAt->city }} 
+						@endif
+					</td>
+					td> @if($show->hostedAt->state)
+							{{ $show->hostedAt->state }} 
+						@endif
+					</td>
 				</tr>
 			@endforeach
 		</tbody>

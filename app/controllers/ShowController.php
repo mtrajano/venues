@@ -9,10 +9,9 @@ class ShowController extends \BaseController {
 	 */
 	public function index()
 	{
-		$shows = Show::paginate(10);
-		return View::make('shows.index')->with('shows', $shows);	
+		$upcomingShows = DB::select(DB::raw( 'SELECT * FROM shows WHERE date >= NOW() ORDER BY date' ))->paginate(10);
+		return View::make('shows.index')->with('shows', $upcomingShows);	
 	}
-
 
 	/**
 	 * Show the form for creating a new resource.
