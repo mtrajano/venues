@@ -34,7 +34,7 @@ class UserTableSeeder extends Seeder
 					User::create([
 						'f_name' => $arr[0],
 						'l_name' => $arr[1],
-						'b_day' => $arr[2],
+						'b_day' => date("Y-m-d", strtotime($arr[2])),
 	                    'gender' => $arr[3],
 						'email' => $arr[4],
 						'password' => Hash::make($arr[5]),
@@ -164,7 +164,7 @@ class ShowTableSeeder extends Seeder
 
         foreach($json as $json_obj){
             Show::create([
-                'when' => $json_obj->date,
+                'when' => date("Y-m-d", strtotime($json_obj->date)),
                 'artist_id' => Artist::firstOrCreate(['name' => $json_obj->artist])->id,
                 'venue_id' => Venue::firstOrCreate(['name' => $json_obj->venue])
             ]);
