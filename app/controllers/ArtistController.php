@@ -13,6 +13,17 @@ class ArtistController extends \BaseController {
 		return View::make('artists.index')->with('artists', $artists);		
 	}
 
+	public function top()
+	{
+		$topArtists = Artist::orderBy('number_likes', 'desc')
+						//->select('name', 'genre')
+						->take(100)
+						->get()
+						->paginate(10);
+
+		return View::make('artists.top')->with('artists', $topArtists);
+	}
+
 
 	/**
 	 * Show the form for creating a new resource.
