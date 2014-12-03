@@ -78,88 +78,168 @@
             </div>
         </div>
     </div>
-    <!-- /.row -->
-    <div class="row">
+
+    <div class="row" id="users">
         <div class="col-lg-8">
             <!-- /.panel -->
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <i class="fa fa-list fa-fw"></i> Latest Events
+                    <i class="fa fa-list fa-fw"></i> Browse Users
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
-                	<div class="col-lg-12">
-                		<table class="table table-bordered table-hover table-striped">
+                    <div class="col-lg-12">
+                        <table class="table table-bordered table-hover table-striped">
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Date</th>
+                                    <th>Last Name</th>
+                                    <th>Email Address</th>
+                                    <th>Birthday</th>
+                                    <th>Address</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Zip Code</th>
+                                    <th>Phone number</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Event 1</td>
-                                    <td>10/21/2013</td>
-                                </tr>
-                                <tr>
-                                    <td>Event 2</td>
-                                    <td>10/25/2013</td>
-                                </tr>
-                                <tr>
-                                    <td>Event 3</td>
-                                    <td>10/25/2013</td>
-                                </tr>
-                                <tr>
-                                    <td>Event 4</td>
-                                    <td>10/26/2013</td>
-                                </tr>
-                                <tr>
-                                    <td>Event 5</td>
-                                    <td>10/27/2013</td>
-                                </tr>
+                                @foreach($data['users'] as $user)
+                                    <tr>
+                                        <td> {{ $user->f_name }} </td>
+                                        <td> {{ $user->l_name }} </td>
+                                        <td> {{ $user->email }} </td>
+                                        <td> {{ $user->b_day}}</td>
+                                        <td> {{ $user->address }} </td>
+                                        <td> {{ $user->city}} </td>
+                                        <td> {{ $user->state}} </td>
+                                        <td> {{ $user->zip}} </td>
+                                        <td> {{ $user->phone}} </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
-                	</div>
+                        <?php Paginator::setPageName('user_page'); ?>
+                        {{ 
+                            $data['users']->appends('show_page', Input::get('show_page', 1))
+                            ->appends('artist_page', Input::get('artist_page', 1))->appends('last_requested','user')->links()
+                        }}
+                    </div>
                 </div>
                 <!-- /.panel-body -->
             </div>
             <!-- /.panel -->
         </div>
-        <!-- /.col-lg-8 -->
-        <div class="col-lg-4">
+    </div>
+    <!-- /.row -->
+    <div class="row" id="events">
+        <div class="col-lg-8">
+            <!-- /.panel -->
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                    <i class="fa fa-list fa-fw"></i> Browse Events
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-users fa-fw"></i> New Users
-                            <span class="pull-right text-muted small"><em>4 minutes ago</em>
-                            </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-music fa-fw"></i> New Events
-                            <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                            </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-microphone fa-fw"></i> New Artists
-                            <span class="pull-right text-muted small"><em>7 minutes ago</em>
-                            </span>
-                        </a>
+                    <div class="col-lg-12">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Artist</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($data['shows'] as $show)
+                                    <tr>
+                                        <td> {{ $show->when }} </td>
+                                        <td> @if($show->artist)
+                                            {{ $show->artist->name }}
+                                            @endif
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                        <?php Paginator::setPageName('show_page'); ?>
+                        {{ 
+                            $data['shows']->appends('user_page', Input::get('user_page', 1))
+                            ->appends('artist_page', Input::get('artist_page', 1))->appends('last_requested','show')->links()
+                        }}
                     </div>
-                    <!-- /.list-group -->
-                    <a href="#" class="btn btn-default btn-block">View All Alerts</a>
                 </div>
                 <!-- /.panel-body -->
             </div>
             <!-- /.panel -->
         </div>
-        <!-- /.col-lg-4 -->
+        <!-- .row -->
     </div>
-    <!-- /.row -->
+    <div class="row" id="artists">
+        <div class="col-lg-8">
+            <!-- /.panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-list fa-fw"></i> Browse Artists
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="col-lg-12">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Artist</th>
+                                    <th>Genre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($data['artists'] as $artist)
+                                    <tr>
+                                        <td> {{ $artist->name }} </td>
+                                        <td> {{ $artist->genre->name }} </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                        <?php Paginator::setPageName('artist_page'); ?>
+                        {{ 
+                            $data['artists']->appends('user_page', Input::get('user_page', 1))->
+                            appends('show_page', Input::get('show_page', 1))->appends('last_requested','artist')->links()
+                        }}
+                    </div>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- .row -->
+    </div>
 </div>
+<script>
+    function getUrlParameter(sParam)
+    {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) 
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) 
+            {
+                return sParameterName[1];
+            }
+        }
+    } 
+
+        var last_requested = getUrlParameter('last_requested');
+        if (last_requested == 'artist'){
+            window.location.hash = '#artists';
+        } 
+        else if(last_requested == 'user'){
+            window.location.hash = '#users';
+        }
+        else if (last_requested == 'show'){
+            window.location.hash = '#events';
+
+        }
+</script>
 <!-- /page-wrapper -->
 @stop
