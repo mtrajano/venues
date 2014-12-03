@@ -20,4 +20,9 @@ class Show extends Eloquent
 	{
 		return $this->belongsToMany('User', 'attends');
 	}
+
+	public function tickets()
+	{
+		return $this->hasMany('Ticket');
+	}
 }
