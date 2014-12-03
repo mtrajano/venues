@@ -114,16 +114,22 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="/assets/js/bootstrap.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
+    <!-- D3 for plots -->
+    <script src="/assets/js/d3.min.js"></script>
+
+    <script src="/assets/js/dimple.min.js"></script>
+
+    <!-- Metis Menu -->
     <script src="/assets/js/plugins/metisMenu/metisMenu.min.js"></script>
 
     <!-- Morris Charts JavaScript -->
     <script src="/assets/js/plugins/morris/raphael.min.js"></script>
     <script src="/assets/js/plugins/morris/morris.min.js"></script>
-    <script src="/assets/js/plugins/morris/morris-data.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="/assets/js/sb-admin-2.js"></script>
+
+    @yield('scripts')
 
 </body>
 

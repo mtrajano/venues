@@ -4,7 +4,7 @@ class Artist extends Eloquent
 {
 	protected $table = 'artists';
 
-	protected $fillable = array('name', 'genre_id', 'description');
+	protected $fillable = array('name', 'genre_id', 'number_likes', 'description');
 
 	public function genre()
 	{
