@@ -9,8 +9,9 @@ class ShowController extends \BaseController {
 	 */
 	public function index()
 	{
-		$upcomingShows = DB::select(DB::raw( 'SELECT * FROM shows WHERE date >= NOW() ORDER BY date' ))->paginate(10);
-		return View::make('shows.index')->with('shows', $upcomingShows);	
+		$upcomingShows = DB::select(DB::raw( 'SELECT * FROM shows WHERE `when` >= NOW() ORDER BY `when`' ));
+		$paginator = Paginator::make($upcomingShows, count($upcomingShows), 10);
+		return View::make('shows.index')->with('shows', $upcomingShows)->with('paginator', $paginator);	
 	}
 
 	/**

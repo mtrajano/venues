@@ -35,6 +35,6 @@
 		</tbody>
 	</table>
 	
-	{{ $shows->links() }}
+	{{ $paginator->links() }}
 </div>
 @stop
