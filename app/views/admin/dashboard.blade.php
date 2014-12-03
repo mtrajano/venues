@@ -80,7 +80,7 @@
     </div>
 
     <div class="row" id="users">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
             <!-- /.panel -->
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -133,7 +133,7 @@
     </div>
     <!-- /.row -->
     <div class="row" id="events">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
             <!-- /.panel -->
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -175,7 +175,7 @@
         <!-- .row -->
     </div>
     <div class="row" id="artists">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
             <!-- /.panel -->
             <div class="panel panel-default">
                 <div class="panel-heading">
