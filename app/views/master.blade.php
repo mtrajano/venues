@@ -67,6 +67,9 @@
 		        <li><a href="{{ URL::to('events') }}">Events</a></li>
 	        </ul>
 	        <ul class="nav navbar-nav navbar-right">
+	        	@if(Auth::user()->admin)
+	        		<li><a href="{{ URL::to('admin') }}">Admin</a></li>
+	        	@endif
 				<li><a href="{{ URL::to('logout') }}">Logout</a></li>
 			</ul>
     	@else
