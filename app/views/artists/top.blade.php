@@ -5,7 +5,7 @@
 <div id="page-wrapper">
 	
 	<div class="page-header">
-		<h1>Artists</h1>
+		<h1>Top Artists</h1>
 	</div>
 
 	<table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example">
@@ -22,8 +22,6 @@
 			@endforeach
 		</tbody>
 	</table>
-
-	{{ $artists->links() }}
 
 </div>
 

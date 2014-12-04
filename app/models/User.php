@@ -36,4 +36,9 @@ class User extends Eloquent implements UserInterface, RemindableInterface
 	{
 		$this->attributes['phone'] = preg_replace('/\D+/', '', $val); 
 	}
+
+	public function getPhoneAttribute($phone)
+	{
+		return preg_replace('~.*(\d{3})[^\d]{,7}(\d{3})[^\d]{,7}(\d{4}).*~', '($1) $2-$3', $phone);
+	}
 }
