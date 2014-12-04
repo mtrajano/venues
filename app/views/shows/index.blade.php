@@ -11,6 +11,7 @@
 		<thead>
 			<th>Date</th>
 			<th>Artist</th>
+			<th>Venue</th>
 			<th>City</th>
 			<th>State</th>
 		</thead>
@@ -21,6 +22,10 @@
 					<td> 
 						@if($show->artist)
 							{{ $show->artist->name }}
+						@endif
+					</td>
+					<td> @if($show->hostedAt)
+							{{ $show->hostedAt->name }} 
 						@endif
 					</td>
 					<td> @if($show->hostedAt)
