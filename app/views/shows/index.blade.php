@@ -18,15 +18,18 @@
 			@foreach($shows as $show)
 				<tr>
 					<td> {{ $show->when }} </td>
-					<td> @if($show->artist)
-						{{ $show->artist->name }}
+					<td> 
+						@if($show->artist)
+							{{ $show->artist->name }}
 						@endif
 					</td>
-					<td> @if($show->hostedAt->city)
+					<td> 
+						@if($show->hostedAt)
 							{{ $show->hostedAt->city }} 
 						@endif
 					</td>
-					td> @if($show->hostedAt->state)
+					<td> 
+						@if($show->hostedAt)
 							{{ $show->hostedAt->state }} 
 						@endif
 					</td>
@@ -35,6 +38,6 @@
 		</tbody>
 	</table>
 	
-	{{ $paginator->links() }}
+	{{ $shows->links() }}
 </div>
 @stop

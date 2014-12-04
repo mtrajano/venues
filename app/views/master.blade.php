@@ -56,12 +56,11 @@
 	    @if(Auth::check())
 		    <ul class="nav navbar-nav">
 		        <li><a href="{{ URL::to('users') }}">Users</a></li>
-		        <li><a href="{{ URL::to('artists') }}">Artists</a></li>
 
 		        <li class="dropdown"><a href="3" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Artists <span class="caret"></span></a>
 		        	<ul class="dropdown-menu" role="menu">
 		        		<li><a href="{{ URL::to('artists') }}">All Artists</a></li>
-		        		<li><a href="{{ URL::to('artists/top') }}">Top 100 Artists</a></li>
+		        		<li><a href="{{ URL::to('top-artists') }}">Top 100 Artists</a></li>
 		        	</ul>
 		        </li>
 

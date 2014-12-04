@@ -12,9 +12,8 @@ class DatabaseSeeder extends Seeder
 		Eloquent::unguard();
 
 		// $this->call('UserTableSeeder');
-		$this->call('TestUserTableSeeder');
 		// $this->call('GenreTableSeeder');
-		// $this->call('ArtistTableSeeder');
+		$this->call('ArtistTableSeeder');
 		// $this->call('VenueTableSeeder');
 		// $this->call('ShowTableSeeder');
 		// $this->call('TicketTableSeeder');
@@ -50,47 +49,26 @@ class UserTableSeeder extends Seeder
 					continue;
 				}
 			}
+
+			$admin = User::create([
+				'f_name' => 'Tomasz',
+				'l_name' => 'Imielinski',
+				'b_day' => '1950-01-01',
+	            'gender' => 'M',
+				'email' => 'tomaszi@gmail.com',
+				'password' => Hash::make('CS336Project'),
+				'address' => '123 Rutgers St',
+				'city' => 'New Brunswick',
+				'state' => 'NJ',
+				'zip' => '07134',
+				'phone' => '123-456-7890',
+			]);
+			$admin->admin = true;
+			$admin->save();
 		}
 		else{
 			echo "Problem opening file";
 		}
-	}
-}
-
-class TestUserTableSeeder extends Seeder
-{
-	public function run()
-	{
-		$admin = User::create([
-			'f_name' => 'Tomasz',
-			'l_name' => 'Imielinski',
-			'b_day' => '1950-01-01',
-            'gender' => 'M',
-			'email' => 'tomaszi@gmail.com',
-			'password' => Hash::make('CS336Project'),
-			'address' => '123 Rutgers St',
-			'city' => 'New Brunswick',
-			'state' => 'NJ',
-			'zip' => '07134',
-			'phone' => '123-456-7890',
-		]);
-		$admin->admin = true;
-		$admin->save();
-
-		$user = User::create([
-			'f_name' => 'Data',
-			'l_name' => 'Student',
-			'b_day' => '1990-01-01',
-            'gender' => 'M',
-			'email' => 'student@gmail.com',
-			'password' => Hash::make('CS336Project'),
-			'address' => '456 Rutgers St',
-			'city' => 'New Brunswick',
-			'state' => 'NJ',
-			'zip' => '07134',
-			'phone' => '123-456-7890',
-			'admin' => false
-		]);
 	}
 }
 
@@ -114,9 +92,15 @@ class ArtistTableSeeder extends Seeder
 			Artist::create([
 				'name' => $json_obj->name,
 				'jambase_id' => $json_obj->jambase_id,
-				'number_likes' => (str_replace( ',', '', $json_obj->number_fans) > 20000) ? ($json_obj->number_fans / 10) : $json_obj->number_fans //only 20000 users
+				'number_likes' => (str_replace( ',', '', $json_obj->number_fans))
 			]);
 		}
+
+		//only 20,000 users in the db, reduce the ones with likes > 20,000
+		Artist::where('name', 'The String Cheese Incident')->update(['number_likes' => rand(4000,5000)]);
+		Artist::where('name', 'Keller Williams')->update(['number_likes' => rand(4000,5000)]);
+		Artist::where('name', 'Dark Star Orchestra')->update(['number_likes' => rand(4000,5000)]);
+		Artist::where('name', 'Railroad Earth')->update(['number_likes' => rand(4000,5000)]);
 
 		$input = file_get_contents(base_path() . '/data/genres.json');
 		$json = json_decode($input);
@@ -166,7 +150,7 @@ class ShowTableSeeder extends Seeder
             Show::create([
                 'when' => date("Y-m-d", strtotime($json_obj->date)),
                 'artist_id' => Artist::firstOrCreate(['name' => $json_obj->artist])->id,
-                'venue_id' => Venue::firstOrCreate(['name' => $json_obj->venue])
+                'venue_id' => Venue::firstOrcreate(['name' => $json_obj->venue])->id
             ]);
         }
 	}
@@ -203,25 +187,27 @@ class LikeTableSeeder extends Seeder
 {
 	public function run()
 	{
-		$artists = Artist::all();
         $users = User::all()->toArray();
 
-		foreach($artists as $artist){
-			if($artist->number_likes == 0){
-				continue;
-			}
+        Artist::chunk(200, function($artists) use ($users)
+        {
+            foreach($artists as $artist) {
+            	if($artist->number_likes == 0){
+            		continue;
+            	}
 
-			$rand_users = array_rand($users, $artist->number_likes);
+            	$rand_users = array_rand($users, $artist->number_likes);
 
-			if($artist->number_likes == 1){
-				User::find($users[$rand_users]['id'])->likes()->attach($artist->id);
-				continue;
-			}
+            	if($artist->number_likes == 1){
+            		User::find($users[$rand_users]['id'])->likes()->attach($artist->id);
+            		continue;
+            	}
 
-			foreach($rand_users as $index){
-				User::find($users[$index]['id'])->likes()->attach($artist->id);
-			}
-		}
+            	foreach($rand_users as $index){
+            		User::find($users[$index]['id'])->likes()->attach($artist->id);
+            	}
+            }
+        });
 	}
 }
 

@@ -16,10 +16,8 @@ class ArtistController extends \BaseController {
 	public function top()
 	{
 		$topArtists = Artist::orderBy('number_likes', 'desc')
-						//->select('name', 'genre')
 						->take(100)
-						->get()
-						->paginate(10);
+						->get();
 
 		return View::make('artists.top')->with('artists', $topArtists);
 	}

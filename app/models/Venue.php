@@ -4,7 +4,7 @@ class Venue extends Eloquent
 {
 	protected $table = 'venues';
 
-	protected $fillable = array('name', 'address', 'zip', 'phone');
+	protected $fillable = array('name', 'address', 'city', 'state', 'zip', 'phone');
 
 	public function hosted()
 	{
