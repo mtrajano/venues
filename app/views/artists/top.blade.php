@@ -10,12 +10,15 @@
 
 	<table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example">
 		<thead>
+			<th>Rank</th>
 			<th>Name</th>
 			<th>Genre</th>
 		</thead>
 		<tbody>
+			<?php $i=1; ?>
 			@foreach($artists as $artist)
 				<tr>
+					<td> {{ $i++ }} </td>
 					<td> {{ $artist->name }} </td>
 					<td> {{ $artist->genre->name }} </td>
 				</tr>
