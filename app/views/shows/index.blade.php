@@ -23,13 +23,11 @@
 							{{ $show->artist->name }}
 						@endif
 					</td>
-					<td> 
-						@if($show->hostedAt)
+					<td> @if($show->hostedAt)
 							{{ $show->hostedAt->city }} 
 						@endif
 					</td>
-					<td> 
-						@if($show->hostedAt)
+					<td> @if($show->hostedAt)
 							{{ $show->hostedAt->state }} 
 						@endif
 					</td>
