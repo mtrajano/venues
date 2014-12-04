@@ -64,7 +64,12 @@
 		        	</ul>
 		        </li>
 
-		        <li><a href="{{ URL::to('events') }}">Events</a></li>
+				<li class="dropdown"><a href="3" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="{{ URL::to('events') }}">All Events</a></li>
+						<li><a href="{{ URL::to('state-events?state=AL') }}">Filter by State</a></li>
+					</ul>
+				</li>
 	        </ul>
 	        <ul class="nav navbar-nav navbar-right">
 	        	@if(Auth::user()->admin)
