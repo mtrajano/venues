@@ -29,9 +29,9 @@ return array(
 	'connections' => array(
 
 		'production' => array(
-			'host'      => '',
-			'username'  => '',
-			'password'  => '',
+			'host'      => '162.244.30.220',
+			'username'  => 'eventigo',
+			'password'  => 'databases1',
 			'key'       => '',
 			'keyphrase' => '',
 			'root'      => '/var/www',
