@@ -11,7 +11,9 @@ class ShowController extends \BaseController {
 	 */
 	public function index()
 	{
-		$upcomingShows = Show::where('when', '>=', Carbon::now())->orderBy('when')->paginate(10);
+		$upcomingShows = Show::whereHas('hostedAt', function($query){
+			$query->where('city', '<>', 'NULL')->where('state', '<>', 'NULL');
+		})->where('when', '>=', Carbon::now())->orderBy('when')->paginate(10);
 
 		return View::make('shows.index')->with('shows', $upcomingShows);
 	}
