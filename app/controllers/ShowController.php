@@ -18,6 +18,16 @@ class ShowController extends \BaseController {
 		return View::make('shows.index')->with('shows', $upcomingShows);
 	}
 
+	public function filterState()
+	{
+		$state = Input::get('state');
+		$upcomingShows = Show::whereHas('hostedAt', function($query) use ($state){
+			$query->where('city', '<>', 'NULL')->where('state', $state);
+		})->where('when', '>=', Carbon::now())->orderBy('when')->paginate(10);
+
+		return View::make('shows.filter')->with('shows', $upcomingShows);
+	}
+
 	/**
 	 * Show the form for creating a new resource.
 	 *

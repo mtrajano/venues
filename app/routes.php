@@ -26,6 +26,7 @@ Route::group(['before' => 'auth'], function(){
     Route::resource('artists', 'ArtistController');
     Route::get('top-artists', 'ArtistController@top');
     Route::resource('events', 'ShowController');
+    Route::get('state-events', 'ShowController@filterState');
     Route::resource('genres', 'GenreController');
     Route::resource('veneus', 'VenueController');
 
