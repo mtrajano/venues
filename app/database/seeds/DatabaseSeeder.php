@@ -147,10 +147,14 @@ class ShowTableSeeder extends Seeder
         $json = json_decode($input);
 
         foreach($json as $json_obj){
+        	$artist = Artist::firstOrNew(['name' => $json_obj->artist]);
+        	$artist->save();
+        	$venue = Venue::firstOrNew(['name' => $json_obj->venue]);
+        	$venue->save();
             Show::create([
                 'when' => date("Y-m-d", strtotime($json_obj->date)),
-                'artist_id' => Artist::firstOrCreate(['name' => $json_obj->artist])->id,
-                'venue_id' => Venue::firstOrcreate(['name' => $json_obj->venue])->id
+                'artist_id' => $artist->id,
+                'venue_id' => $venue->id
             ]);
         }
 	}

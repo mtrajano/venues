@@ -8,12 +8,12 @@ class Show extends Eloquent
 
 	public function hostedAt()
 	{
-		return $this->belongsTo('Venue');
+		return $this->belongsTo('Venue','venue_id');
 	}
 
 	public function artist()
 	{
-		return $this->belongsTo('Artist');
+		return $this->belongsTo('Artist','artist_id');
 	}
 
 	public function attendedBy()
