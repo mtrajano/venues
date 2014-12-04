@@ -106,7 +106,7 @@
 			</tbody>
 		</table>
 		
-		{{ $shows->links() }}
+		{{ $shows->appends(['state' => Input::get('state')])->links() }}
 
 	@endif
 </div>
