@@ -15,6 +15,7 @@ Route::get('/', ['uses' => 'HomeController@index', 'as' => 'home']);
 
 Route::get('login', ['uses' => 'HomeController@loginScreen', 'as' => 'login_url']);
 Route::post('login', ['uses' => 'HomeController@login']);
+Route::post('signup', ['uses' => 'HomeController@signup']);
 Route::get('logout', ['uses' => 'HomeController@logout']);
 
 Route::get('json/friendsfinder', ['uses' => 'FriendsFinderController@search']);

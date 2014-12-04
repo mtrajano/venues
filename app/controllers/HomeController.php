@@ -36,9 +36,27 @@ class HomeController extends BaseController {
                 return Redirect::intended('admin');
             }
             else{
-                return Redirect::intended('/'); 
+                return Redirect::intended('users'); 
             }
         }
+    }
+
+    public function signup()
+    {
+        $email = Input::get('email');
+        $name = Input::get('firstname');
+        $surname = Input::get('lastname');
+        $password = Input::get('passwd');
+
+        $user = User::create([
+            'email' => $email,
+            'f_name' => $name,
+            'l_name' => $surname
+        ]);
+        $user->password = Hash::make($password);
+        $user->save();
+
+        return Redirect::to('login')->withSuccess("Thank you for signing up!");
     }
 
     public function logout()

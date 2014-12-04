@@ -66,7 +66,8 @@
                 <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
             </div>  
             <div class="panel-body" >
-                <form id="signupform" class="form-horizontal" role="form">
+
+                {{ Form::open(['url' => '/signup', 'id' => 'signupform', 'class' => 'form-horizontal']) }}
                     
                     <div id="signupalert" style="display:none" class="alert alert-danger">
                         <p>Error:</p>
@@ -104,17 +105,19 @@
                     <div class="form-group">
                         <label for="icode" class="col-md-3 control-label">Confirm</label>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" name="icode" placeholder="Confirm Password">
+                            <input type="password" class="form-control" name="confpass" placeholder="Confirm Password">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <!-- Button -->                                        
                         <div class="col-md-offset-3 col-md-9">
-                            <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                            {{ Form::submit('Sign up', ['id' => 'btn-signup', 'class' => 'btn btn-info']) }}
                         </div>
                     </div>
-                </form>
+
+                {{ Form::close() }}
+
              </div>
         </div>
      </div> 
